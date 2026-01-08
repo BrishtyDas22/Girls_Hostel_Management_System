@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+#header{
+    
+    height:100px;
+    width: 100%;
+    background-color:#1d0be2e1;
+    margin: 0 auto;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+   
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 40px;
+    top: 10px;
+    left: 20px;
+   
+}
+
+#room_box{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    top: 200px;
+    left:20px;
+    border: 2px solid #1d0be2e1;
+    height: 350px;
+    width: 95%;
+    border-radius: 20px; 
+    background-color: #f4f4ff;
+    padding: 10px ;
+}
+#room_box img{
+    margin-top: 0px;
+    margin-left:0px;
+    height: 350px;
+    width: 500px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.room_info{
+    position: absolute;
+    top: 10px;
+    left: 540px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+#amount{
+    position: absolute;
+    left:110px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: black;
+}
+.book_btn{
+    position: absolute;
+    top: 270px;
+    left: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #1023f6d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+#price{
+    font-family: 'Times New Roman', Times, serif;
+    color: limegreen;
+}
+#back_logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
