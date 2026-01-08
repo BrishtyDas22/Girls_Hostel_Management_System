@@ -66,8 +66,10 @@ p{
 
 
 footer{
-
-    margin-top: 500px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1000px;
     padding: 10px 0;
     background-color: #030211e1;
     color: white;
@@ -205,12 +207,12 @@ h2{
     border: 1px solid rgb(189, 189, 189);
     padding: 10px;
     top:480px;
-    left: 400px;
+    left: 390px;
     box-shadow: #030211e1 0px 4px 8px 0px;
 
 }
 
-#room_box img{
+#room_image{
     height: 180px;
     width: 320px;
     border-radius: 6px;
@@ -261,6 +263,274 @@ h2{
     font-size: 16px;
     font-weight: bold;
 }
+
+
+#room_box2{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    height: 400px;
+    width: 330px;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+    top:480px;
+    left: 770px;
+    box-shadow: #030211e1 0px 4px 8px 0px;
+
+}
+
+#room_image{
+    height: 180px;
+    width: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.room_info2{
+    position:relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:15px;
+  font-weight: bold;
+
+
+}
+.room_no{
+    position: relative;
+    top: 3px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.price{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.book_btn{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(4, 1, 53);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#room_box3{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    height: 400px;
+    width: 330px;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+    top:480px;
+    left: 1150px;
+    box-shadow: #030211e1 0px 4px 8px 0px;
+}
+
+#room_image{
+    height: 180px;
+    width: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.room_info3{
+    position:relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:15px;
+  font-weight: bold;
+
+
+}
+.room_no{
+    position: relative;
+    top: 3px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.price{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.book_btn{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(4, 1, 53);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#room_box4{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 330px;
+    height: 400px;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+    top:980px;
+    left: 10px;
+    box-shadow: #030211e1 0px 4px 8px 0px;
+
+}
+
+#room_image{
+    height: 180px;
+    width: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.room_info4{
+    position:relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:15px;
+  font-weight: bold;
+
+
+}
+.room_no{
+    position: relative;
+    top: 3px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.price{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.book_btn{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(4, 1, 53);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#room_box5{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    height: 400px;
+    width: 330px;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+    top:980px;
+    left: 390px;
+    box-shadow: #030211e1 0px 4px 8px 0px;
+
+}
+
+#room_image{
+    height: 180px;
+    width: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.room_info5{
+    position:relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:15px;
+  font-weight: bold;
+
+
+}
+.room_no{
+    position: relative;
+    top: 3px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.price{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.book_btn{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    padding: 8px 15px;
+    background-color: rgb(4, 1, 53);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
 
 
 
