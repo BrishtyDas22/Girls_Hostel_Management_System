@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.panel{
+
+    
+    border: 2px solid #2b2b2df4;
+    border-radius: 2px;
+    background-color: #7b7b7b;
+    color:white;
+    width: 250px;
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+.sidebar{
+    position: absolute;
+    top: 82px;
+    left: 0px;
+    width: 253px;
+    height: 100%;
+    background-color: #535353;
+    padding-top: 20px;
+}
+.links{
+    display: block;
+    color: white;
+    padding: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#dashboard{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color:#a6a6a60f;
+    color:white;
+    height: 60px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#manageusers{
+     position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color:#a6a6a60f;
+    color:white;
+    height: 60px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#assignstaff{
+        position: absolute;
+        top: 140px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#managebookings{
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        text-align-last: right;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#complaints{
+        position: absolute;
+        top: 260px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#notices{
+        position: absolute;
+        top: 320px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#Student-feedback{
+        position: absolute;
+        top: 380px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        text-align-last: right;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#logout{
+        position: absolute;
+        top:440px;
+        left: 0px;
+        background-color:#a6a6a60f;
+        color:white;
+        height: 60px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+}
+#navlist{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+}
+#dashboardlogo{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#managestudentlogo{
+    position: absolute;
+    left: 15px;
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#stafflogo{
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#roombookinglogo{
+    position: absolute;
+    left: 15px;
+    top: 210px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#complaintslogo{
+    position: absolute;
+    left: 15px;
+    top: 270px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#noticeslogo{
+    position: absolute;
+    left: 15px;
+    top: 330px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#studentfeedbacklogo{
+    position: absolute;
+    left: 15px;
+    top: 390px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#logoutlogo{
+    position: absolute;
+    left: 15px;
+    top: 450px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+body{
+    background-color: #e0e0e0;
+    margin:0;
+    padding:0;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 253px;
+    right: 0;
+    height: 82px;
+    line-height: 40px;
+    border: 2px solid #c6c6c6f4;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+   
+}
+#managebookings-content{
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid #c6c6c6f4;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 20px;
+    height: 170px;
+}
+#bookingtitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+#studentname{
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+#studentname-input{
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#roomnumber{
+    position: absolute;
+    left:550px;
+    top:70px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+#roomnumber-input{
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.confirm-booking{
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    width: 150px;
+    height: 40px;
+    background-color: #256eff;
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#roomstatus-content{
+    position: absolute;
+    top: 350px;
+    left: 270px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid #c6c6c6f4;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 20px;
+    height: 300px;
+    
+}
+#roomstatus-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
