@@ -8,7 +8,7 @@ include("../CONTROL/validationonlogin.php");
        <link rel="stylesheet" href ="../CSS/Login.css">
 </head>
 <body>
-    <img src="../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage.php'">
+    <img src="../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage1.php'">
 
 <div class="login-box">
 
