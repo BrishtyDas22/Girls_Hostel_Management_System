@@ -7,6 +7,8 @@
 
 <body>
     <div id="header_div">
+
+    <img src="../images/machine.png" alt="logo" id="header_logo">
        
     <h1>Welcome to Happy-Life</h1>
     </div>
@@ -20,6 +22,19 @@
 
     <button type="submit" id="register" onclick="location.href='registration1.php'">Register Now</button>
     <button type="submit" id="login" onclick="location.href='Login.php'">Login</button>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <pre>© 2025 Happy Life Hostel Management System. All rights reserved.</pre>
+        <pre>© Created by Happy Life Team</pre>
+    </footer>
 
     
 </body>
