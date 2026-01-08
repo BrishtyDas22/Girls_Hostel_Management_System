@@ -10,6 +10,9 @@
        
     <h1>Welcome to Happy-Life</h1>
     </div>
+    <div id="header_image_div">
+    <img src="../images/94f891a8a5192810c8dbef05ccef6a26.jpg" alt="header image" id="header_image">
+    </div>
 
 
 
