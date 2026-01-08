@@ -38,7 +38,15 @@ body {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     z-index: -1;
-    }
+}
+#header_logo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    left: 30px;
+    
+}
 #header_image_h1{
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
@@ -53,6 +61,18 @@ p{
     color: white;
     top: 140px;
     left: 37%;
+    font-size: 14px;
+}
+
+
+footer{
+
+    margin-top: 500px;
+    padding: 10px 0;
+    background-color: #030211e1;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
 }
 
