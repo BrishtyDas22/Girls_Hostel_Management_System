@@ -14,7 +14,7 @@
 
     </div>
     <br>
-    <img src="../../images/back.png" alt="back logo" width="40px" height="40px" id="back_logo" onclick="location.href='frontpage.php'">
+    <img src="../../images/back.png" alt="back logo" width="40px" height="40px" id="back_logo" onclick="location.href='frontpage1.php'">
 
     <form action=""method="post">
 
