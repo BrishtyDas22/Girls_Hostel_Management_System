@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(212, 210, 210, 0.971);
+
 }
 #header_div{
     height:80px;
@@ -15,4 +16,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
