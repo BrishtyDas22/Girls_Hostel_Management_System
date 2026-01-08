@@ -29,6 +29,33 @@
     <h2>Available Rooms</h2>
 
 
+     <div id="room_box">
+
+
+    <img src="../images/2bed.jpg" alt="room image " id="room_image"> 
+
+    <div class="room_info"><h3>Room Info:</h3>
+        <p class="room_no">Room No:101 </p>
+    <p class="price">Price: 10000tk/month</p>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
+
+     </div> </div> 
+
+     <div id="room_box1">
+
+
+    <img src="../images/1.jpg" alt="room image" id="room_image">
+
+    <div class="room_info1"><h3>Room Info:</h3>
+        <p class="room_no">Room No:102 </p>
+    <p class="price">Price: 10000tk/month</p>
+<button type="submit" class="book_btn" onclick="notallowed()">Book Now</button>
+<script src="../JS/alertinbookwithoureg.js"></script>
+
+     </div> </div>
+
+
 
 
 
