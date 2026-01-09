@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color:#655bf861;
+    background-color:#e0dfdfce;
 }
 .login-box{
     width: 350px;
@@ -50,7 +50,7 @@ body{
     font-size: 20px;
     margin-top: 20px;
     margin-left: 115px;
-    background-color: #1023f6d5;
+    background-color: #012957d5;
     border-radius: 20px;
     color: white;
     cursor: pointer;
