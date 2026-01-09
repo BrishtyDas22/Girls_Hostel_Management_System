@@ -10,10 +10,11 @@
 </head>
 <link rel="stylesheet" href="../CSS/designforreg.css">
 <body>
+   
     <img src="../images/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='frontpage1.php'">
 
     <form id="form1" method="post">
-        <img src="../images/11879738.png" alt="registration" width="60px" height= "50px" id="regimage">
+      
         <center>
 
     <h2>Register NOW!</h2>
