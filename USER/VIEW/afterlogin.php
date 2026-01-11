@@ -10,12 +10,23 @@ if (!isset($_SESSION["username"])) {
 
 <!DOCTYPE html>
 <html>
+    <head>
+    
+    <title>Welcome to Hostel</title>
+</head>
+<link rel="stylesheet" href="../CSS/afterlogindesign.css">
 <body>
-    <h2>Welcome to Dashboard</h2>
-    <p><b>Name:</b> <?php echo $_SESSION["username"]; ?></p>
-    <p><b>Email:</b> <?php echo $_SESSION["email"]; ?></p>
-    <p><b>Phone:</b> <?php echo $_SESSION["phonenumber"]; ?></p>
-    <p><b>Blood Group:</b> <?php echo $_SESSION["blood"]; ?></p>
+    <div id="header_design">
+
+    <h1 id="header_text">Room Your Book</h1>
+
+    <a href="../VIEW/editprofile.php"><img src="../images/user.png" alt="user-logo" id="user_logo"></a>
+        <img src="../images/machine.png" alt="logo" id="header_logo">
+
+    <h2>Welcome <?= $_SESSION["username"] ?></h2>
+    
+    </div>
+
 
     <br>
     <a href="../CONTROL/logout.php">Logout</a>
