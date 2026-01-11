@@ -48,6 +48,7 @@ if ($result->num_rows > 0) {
         session_start();
     
  foreach ($result as $row) {
+        $_SESSION["user_id"]=$row['id'];
         $_SESSION["username"] = $row['name'];
         $_SESSION["email"]       = $row['email'];
         $_SESSION["phonenumber"] = $row['phonenumber'];
