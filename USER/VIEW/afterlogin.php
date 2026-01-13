@@ -5,7 +5,6 @@ if (!isset($_SESSION["username"])) {
     header("Location: Login.php");
     exit();
 }
-
 ?>
 
 <!DOCTYPE html>

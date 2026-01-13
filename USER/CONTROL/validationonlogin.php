@@ -1,5 +1,4 @@
 <?php
-
 include '../MODEL/db.php';
 $name="";
 $email="";
@@ -34,7 +33,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
 
     if($isValid){
-
         $conn = openConn();
         $result = getuserforlogin($conn, $name, $email);
 if ($result->num_rows > 0) {
@@ -44,26 +42,22 @@ if ($result->num_rows > 0) {
     }
 
     if (password_verify($password, $db_password)) {
-        
         session_start();
     
  foreach ($result as $row) {
-        $_SESSION["user_id"]=$row['id'];
-        $_SESSION["username"] = $row['name'];
+        $_SESSION["user_id"]      = $row['ID'];
+        $_SESSION["username"]    = $row['name'];
         $_SESSION["email"]       = $row['email'];
         $_SESSION["phonenumber"] = $row['phonenumber'];
         $_SESSION["blood"]       = $row['blood'];
     }
            $success_msg="Login successful!";
-
-           header("Location: ../VIEW/afterlogin.php");
+           header("location: ../VIEW/afterlogin.php");
            exit();
 
     } else {
         $password_error="Invalid password.";
     }
-    
-    
 
 }
 else {
@@ -74,7 +68,5 @@ $conn->close();
 }
 
 
-
 }
-
 ?>
