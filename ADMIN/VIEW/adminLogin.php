@@ -8,9 +8,17 @@ include("../CONTROL/validationonloginadmin.php");
        <link rel="stylesheet" href ="../CSS/Login.css">
 </head>
 <body>
+    <div class="bg-div">
+    <img src="../IMAGES/bg.avif" class="bg-img" alt="">
+</div>
     <img src="../IMAGES/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='../../USER/VIEW/frontpage.php'">
 
 <div class="login-box">
+     <div class="left-div">
+        <img src="../IMAGES/laptop.png" class="left-img" alt="laptop">
+    </div>
+
+    <div class="right-div">
 
     <form method="post" id="login_form" action="">
         <img src="../IMAGES/login.png" alt="login logo" width="80px" height="80px" id="login_image">
@@ -44,7 +52,7 @@ include("../CONTROL/validationonloginadmin.php");
         echo '<div class="success">'.$success_msg.'</div>';
     }
     ?>
-
+</div>
 </div>
 <script> 
     var msg = "<?php echo $success_msg; ?>"; 
