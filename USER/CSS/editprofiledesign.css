@@ -64,7 +64,37 @@ h1{
     
     
 }
-.editform{
+.editprofile{
     position: absolute;
-    top: 30px;
+    top: 110px;
+    left: 330px;
+    width: 75%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow:  #030211e1 0px 4px 8px 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+#name,#email,#phonenumber,#blood,#password{
+    font-family: 'Times New Roman', Times, serif;
+    width: 98%;
+    height: auto;
+    margin-left: 10px;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow:  #3c3c3ce1 0px 2px 2px 0px;
+    border:2px solid #b3b3b3;
+   
+
+
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
 }
