@@ -123,3 +123,403 @@ h3{
 
 
 }
+#book_now1{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
+#room_info2{
+    position: absolute;
+    top: 450px;
+    left: 40px;
+    width: 95%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #00ffae;
+    border-color: rgb(2, 244, 171);
+
+}
+#room2_img{
+    margin-top: 10px;
+    margin-left:20px;
+    height: 280px;
+    width: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+
+}
+#r2{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+
+}
+#p2{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+}
+#r2_info{
+      position: absolute;
+    top: 140px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+
+
+}
+#book_now2{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
+#room_info3{
+    position: absolute;
+    top: 780px;
+    left: 40px;
+    width: 95%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #00ffae;
+    border-color: rgb(2, 244, 171);
+
+}
+#room3_img{
+    margin-top: 10px;
+    margin-left:20px;
+    height: 280px;
+    width: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+
+}
+#r3{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+
+}
+#p3{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+}
+#r3_info{
+      position: absolute;
+    top: 140px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+
+
+}
+#book_now3{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
+#room_info4{
+    position: absolute;
+    top: 1110px;
+    left: 40px;
+    width: 95%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #00ffae;
+    border-color: rgb(2, 244, 171);
+
+}
+#room4_img{
+    margin-top: 10px;
+    margin-left:20px;
+    height: 280px;
+    width: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+
+}
+#r4{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+
+}
+#p4{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+}
+#r4_info{
+      position: absolute;
+    top: 140px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+
+
+}
+#book_now4{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
+
+#room_info5{
+    position: absolute;
+    top: 1440px;
+    left: 40px;
+    width: 95%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #00ffae;
+    border-color: rgb(2, 244, 171);
+
+}
+#room5_img{
+    margin-top: 10px;
+    margin-left:20px;
+    height: 280px;
+    width: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+
+}
+#r5{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+
+}
+#p5{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+}
+#r5_info{
+      position: absolute;
+    top: 140px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+
+
+}
+#book_now5{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
+#room_info6{
+    position: absolute;
+    top: 1770px;
+    left: 40px;
+    width: 95%;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #00ffae;
+    border-color: rgb(2, 244, 171);
+
+}
+#room6_img{
+    margin-top: 10px;
+    margin-left:20px;
+    height: 280px;
+    width: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+
+}
+#r6{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+
+}
+#p6{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px;
+    color: black;
+}
+#r6_info{
+      position: absolute;
+    top: 140px;
+    left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+
+
+}
+#book_now6{
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
+
