@@ -26,6 +26,18 @@ if (!isset($_SESSION["username"])) {
     
     </div>
 
+    <div id="room_info">
+        <form method="post" id="booking-form">
+            <img src="../images/2bed.jpg" alt="room1.png" id="room1_img">
+            <h3>Room Info:</h3>
+            <label id="r1">Room No:</label>
+            <label id="p1">Price:</label>
+            <p id ="r1_info"><b><i>Fully furnished with cleaning services provided twice a week. Includes high-speed internet and access to the common room.</i></b></p>
+        </form>
+
+
+    </div>
+
 
     <br>
     <a href="../CONTROL/logout.php">Logout</a>
