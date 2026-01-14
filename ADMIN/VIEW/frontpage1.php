@@ -8,9 +8,9 @@
 <body>
     <div id="header_div">
 
-    <img src="../IMAGES/machine.jpeg" alt="logo" id="header_logo">
+    <img src="../IMAGES/11.gif" alt="logo" id="header_logo">
        
-    <h1>Welcome to Happy-Life</h1>
+  
     </div>
     <div id="header_image_div">
     <img src="../IMAGES/hostel-g.jpg" alt="header image" id="header_image">
@@ -29,7 +29,7 @@
     <h2>Available Rooms</h2>
 
 
-     <div id="room_box">
+     <div id="room_box" >
 
 
     <img src="../IMAGES/2bed.jpg" alt="room image " id="room_image"> 
