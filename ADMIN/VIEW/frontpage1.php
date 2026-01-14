@@ -22,7 +22,7 @@
 
     <button type="submit" id="register" >Register Now</button>
     <button type="submit" id="login" >Login</button>
-    <button type="submit" id="Alogin" >Admin Login</button>
+    <button type="submit" id="Alogin" onclick="goToLogin()" >Admin Login</button>
 
    
 
@@ -105,6 +105,6 @@
         <pre>© Created by Happy Life Team</pre>
     </footer>
 
-    
+  <script src="../JS/goToLogin.js"></script>  
 </body>
 </html>
