@@ -70,6 +70,11 @@ function updateUser($conn, $id, $name, $email, $phone, $blood, $hashedPass = nul
     return $conn->query($sql);
 }
 
+function getRoomDetails($conn) {
+    $sql = "SELECT * FROM room_info_table";
+    return $conn->query($sql);
+}
+
 
 
 
