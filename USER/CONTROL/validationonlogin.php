@@ -50,6 +50,13 @@ if ($result->num_rows > 0) {
         $_SESSION["email"]       = $row['email'];
         $_SESSION["phonenumber"] = $row['phonenumber'];
         $_SESSION["blood"]       = $row['blood'];
+        if (!empty($row['profile_pic'])) {
+            
+            $_SESSION["profile_pic"] = $row['profile_pic'];
+        } else {
+        
+            $_SESSION["profile_pic"] = "../images/user.png";
+        }
     }
            $success_msg="Login successful!";
            header("location: ../VIEW/afterlogin.php");

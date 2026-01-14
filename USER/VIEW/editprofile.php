@@ -34,7 +34,13 @@ if(!isset($_SESSION["user_id"])){
     <div id="picupload">
         <img src="<?php echo $_SESSION['profile_pic'] ?? '../images/user.png'; ?>" alt="profile_image" id="picupload-design">
         <br>
-        <input type="file" name="profile_image"/>
+       <input type="file" name="profile_image" id="actual-file-input" style="display: none;" onchange="updateFileName()"/>
+    
+    <button type="button" id="pbutton" onclick="document.getElementById('actual-file-input').click()"> Choose Image</button>
+
+    <button type="submit" id="submit-btn2" name="submit">Update Profile </button>
+    
+    <span id="filet">No file chosen</span>
     </div>
 
     <label>Profile Management</label>
@@ -60,7 +66,7 @@ if(!isset($_SESSION["user_id"])){
     <input type="password" id="password" name="password">
     <hr>
 
-    <button type="submit" id="submit-btn" name="submit">Update Everything</button> 
+    <button type="submit" id="submit-btn" name="submit">Update </button> 
  
             
             <div class="error">
@@ -87,6 +93,7 @@ if(!isset($_SESSION["user_id"])){
     </form>
 
 </div>
+<a href="../CONTROL/logout.php"><button type="sumit" id="logout">Logout</button></a>
 
 
 

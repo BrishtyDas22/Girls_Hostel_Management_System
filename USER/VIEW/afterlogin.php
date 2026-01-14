@@ -32,7 +32,7 @@ $conn->close();
 
     <h1 id="header_text">Room Your Book</h1>
 
-    <a href="../VIEW/editprofile.php"><img src="../images/user.png" alt="user-logo" id="user_logo"></a>
+    <a href="../VIEW/editprofile.php"><img src="<?php echo $_SESSION['profile_pic'] ?? '../images/user.png'; ?>" alt="user-logo" id="user_logo"></a>
         <img src="../images/machine.png" alt="logo" id="header_logo">
 
     <h2>Welcome <?= $_SESSION["username"] ?></h2>

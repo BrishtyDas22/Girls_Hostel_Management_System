@@ -114,10 +114,10 @@ label{
 #picupload{
 
     position: absolute;
-    top: 210px;
-    left: 30px;
+    top: 0px;
+    left: -300px;
     width: 20%;
-    height: auto;
+    height: 300px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     border-radius: 10px;
@@ -128,9 +128,58 @@ label{
 }
 #picupload-design{
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
     top: 10px;
-    right: 20px;
+    left: 60px;
+    border-radius: 80px;
+    
+}
+#pbutton{
+    margin-top: 150px;
+    margin-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 10px;
+    color: white;
     cursor: pointer;
+    width: 160px;
+    height: 40px;
+
+}
+#filet{
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    display:none;
+}
+#submit-btn2{
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+
+}
+#logout{
+    position: relative;
+    top: 513px;
+    left: 540px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+
 }
