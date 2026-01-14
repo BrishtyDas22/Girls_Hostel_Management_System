@@ -29,30 +29,39 @@ if(!isset($_SESSION["user_id"])){
 
 
     <div class="editprofile">
-    <form action="../CONTROL/edituserprofile.php" method="post" class= editform>
-        <label>Profile Management</label>
-        <hr>
-            <label for="name">Name:</label><br/>
-            <input type="text" id="name" name="name" value="<?php echo $_SESSION["username"]; ?>">
-            <hr>
+    <form action="../CONTROL/edituserprofile.php" method="post" enctype="multipart/form-data" class="editform">
+    
+    <div id="picupload">
+        <img src="<?php echo $_SESSION['profile_pic'] ?? '../images/user.png'; ?>" alt="profile_image" id="picupload-design">
+        <br>
+        <input type="file" name="profile_image"/>
+    </div>
 
-            <label for="email">Email:</label><br/>
-            <input type="text" id="email" name="email" value="<?php echo $_SESSION['email']; ?>">
-            <hr>
+    <label>Profile Management</label>
+    <hr>
+    
+    <label for="name">Name:</label><br/>
+    <input type="text" id="name" name="name" value="<?php echo $_SESSION["username"]; ?>">
+    <hr>
 
-            <label for="phonenumber">Phone number:</label>
-            <input type="text" id="phonenumber" name="phonenumber" value="<?php echo $_SESSION['phonenumber']; ?>">
-            <hr>
+    <label for="email">Email:</label><br/>
+    <input type="text" id="email" name="email" value="<?php echo $_SESSION['email']; ?>">
+    <hr>
 
-            <label for="blood">Blood group:</label>
-            <input type="text" id="blood" name="blood" value="<?php echo $_SESSION['blood']; ?>">
-            <hr>
+    <label for="phonenumber">Phone number:</label>
+    <input type="text" id="phonenumber" name="phonenumber" value="<?php echo $_SESSION['phonenumber']; ?>">
+    <hr>
 
-            <label for="password"> New Password (leave blank to keep current):</label>
-            <input type="password" id="password" name="password">
-            <hr>
+    <label for="blood">Blood group:</label>
+    <input type="text" id="blood" name="blood" value="<?php echo $_SESSION['blood']; ?>">
+    <hr>
 
-            <button type="submit" id="submit-btn" name="submit">Update</button>   
+    <label for="password"> New Password (leave blank to keep current):</label>
+    <input type="password" id="password" name="password">
+    <hr>
+
+    <button type="submit" id="submit-btn" name="submit">Update Everything</button> 
+ 
             
             <div class="error">
                 <?php
@@ -76,7 +85,11 @@ if(!isset($_SESSION["user_id"])){
                     ?>
             </div>
     </form>
+
 </div>
+
+
+
     
     
 </body>

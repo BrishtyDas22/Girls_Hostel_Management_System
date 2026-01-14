@@ -27,12 +27,35 @@ $id = (int)$_SESSION["user_id"];
     if (isEmailtakenbysomeoneelse($conn, $email, $id)) {
         $_SESSION['update_err'] = 'That email is already used by another account.';
     } else {
+        if (empty($name) || empty($email)) {
+            $_SESSION['update_err'] = 'Name and Email cannot be empty.';
+            header("Location: ../VIEW/editprofile.php");
+            exit();
+        }
+
+
+        
+       $profile_pic_path = $_SESSION['profile_pic'] ?? '../images/user.png';
+       if (isset($_FILES['profile_image']) && $_FILES['profile_image']['error'] == 0) {
+            $target_dir = "../images/uploads/";
+            
+            if (!file_exists($target_dir)) { mkdir($target_dir, 0777, true); }
+
+            $file_extension = pathinfo($_FILES["profile_image"]["name"], PATHINFO_EXTENSION);
+            $new_filename = "user_" . $id . "_" . time() . "." . $file_extension; 
+            $target_file = $target_dir . $new_filename;
+
+            if (move_uploaded_file($_FILES["profile_image"]["tmp_name"], $target_file)) {
+                $profile_pic_path = $target_file;
+            }
+        }
       
-        if (updateUser($conn, $id, $name, $email, $phone, $blood, $hashedPass)) {
+        if (updateUser($conn, $id, $name, $email, $phone, $blood, $hashedPass, $profile_pic_path)) {
     $_SESSION['username'] = $name; 
     $_SESSION['email'] = $email;
     $_SESSION['phonenumber'] = $phone;
     $_SESSION['blood'] = $blood;
+    $_SESSION['profile_pic'] = $profile_pic_path;
     
     $_SESSION['update_ok'] = 'Profile updated successfully!';
     

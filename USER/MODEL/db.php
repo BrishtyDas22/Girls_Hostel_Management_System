@@ -52,19 +52,19 @@ return ($res && $res->num_rows > 0);
 
 }
 
-function updateUser($conn, $id, $name, $email, $phone, $blood, $hashedPass = null ){
+function updateUser($conn, $id, $name, $email, $phone, $blood, $hashedPass = null, $profile_pic = null) {
     $name = $conn->real_escape_string($name);
     $email = $conn->real_escape_string($email);
     $phone = $conn->real_escape_string($phone);
     $blood = $conn->real_escape_string($blood);
+    $profile_pic = $conn->real_escape_string($profile_pic);
     $id = (int)$id;
 
-    if($hashedPass === null){
-        
-        $sql = "UPDATE user_registration SET name='$name', email='$email', phonenumber='$phone', blood='$blood' WHERE ID=$id";
+    if($hashedPass === null) {
+        $sql = "UPDATE user_registration SET name='$name', email='$email', phonenumber='$phone', blood='$blood', profile_pic='$profile_pic' WHERE ID=$id";
     }
-    else{
-        $sql = "UPDATE user_registration SET name='$name', email='$email', phonenumber='$phone', password = '$hashedPass', blood='$blood' WHERE ID=$id";
+    else {
+        $sql = "UPDATE user_registration SET name='$name', email='$email', phonenumber='$phone', password = '$hashedPass', blood='$blood', profile_pic='$profile_pic' WHERE ID=$id";
     }
 
     return $conn->query($sql);
