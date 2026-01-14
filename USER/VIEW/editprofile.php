@@ -12,9 +12,24 @@ if(!isset($_SESSION["user_id"])){
 <head>
     
     <title>Edit profile</title>
+    <link rel="stylesheet" href="../CSS/editprofiledesign.css">
 </head>
 <body>
-    <form action="../CONTROL/edituserprofile.php" method="post">
+
+
+     <div id="header_design">
+
+    <h1 id="header_text">Edit your Profile</h1>
+
+        <img src="../images/machine.png" alt="logo" id="header_logo">
+
+    
+    </div>
+
+
+
+
+    <form action="../CONTROL/edituserprofile.php" method="post" class= editform>
             <label for="name">Name:</label><br/>
             <input type="text" id="name" name="name" value="<?php echo $_SESSION["username"]; ?>">
 
