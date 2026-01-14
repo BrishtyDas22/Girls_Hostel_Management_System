@@ -52,7 +52,7 @@ if(!isset($_SESSION["user_id"])){
             <input type="password" id="password" name="password">
             <hr>
 
-            <button type="submit" id="submit" name="submit">Update</button>   
+            <button type="submit" id="submit-btn" name="submit">Update</button>   
             
             <div class="error">
                 <?php
