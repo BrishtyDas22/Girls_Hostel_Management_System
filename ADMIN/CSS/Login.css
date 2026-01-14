@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 700px;
+}
+
+/* Background  */
+
+.bg-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -2;
+    overflow: hidden;
+}
+
+.bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;   
+}
+
+
+/*Home icon  */
+#home_logo{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/*  Login box */
+.login-box{
+    width: 900px;
+    height: 520px;
+
+    position: relative;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: rgba(251, 252, 255, 0.78);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/*  Left side */
+.left-div{
+    width: 450px;
+    height: 520px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-img{
+    width: 300px;
+
+    position: absolute;
+    top: 110px;
+    left: 75px;
+}
+
+/* Right side */
+.right-div{
+    width: 450px;
+    height: 520px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+#login_form{
+    margin-top: 10px;
+}
+
+/* Labels */
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+#login_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    position: relative;
+    left: 155px;
+    margin-bottom: 10px;
+}
+
+
+#name,
+#email,
+#password{
+    width: 360px;
+    height: 30px;
+
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+}
+
+
+#login_button{
+    width: 120px;
+    height: 35px;
+
+    position: relative;
+    left: 140px;
+    margin-top: 15px;
+
+    font-size: 18px;
+  background-color: rgb(4, 1, 53);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.error{
+    width: 360px;
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.success{
+    width: 360px;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
