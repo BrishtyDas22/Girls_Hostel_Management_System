@@ -195,3 +195,110 @@ cursor: pointer;
     box-shadow: #5f5f61e1 0px 6px 12px 0px; 
     transform: scale(1.02); 
 }
+
+#overviewimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#complaintsimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#noticeimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#notificationimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#booknewroomimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+
