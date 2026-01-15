@@ -11,13 +11,15 @@ if (!isset($_SESSION["username"])) {
 $conn = openConn();
 
 $payment_status = "";
+$booked_room_num = "";
 $user_check = $_SESSION["username"];
-$status_query = "SELECT status FROM payment WHERE username='$user_check' ORDER BY booking_id DESC LIMIT 1";
+$status_query = "SELECT status, room_number FROM payment WHERE username='$user_check' ORDER BY booking_id DESC LIMIT 1";
 $status_result = $conn->query($status_query);
 
 if ($status_result && $status_result->num_rows > 0) {
     $row = $status_result->fetch_assoc();
     $payment_status = $row['status'];
+    $booked_room_num = $row['room_number'];
 }
 $result = getRoomDetails($conn);
 $rooms = [];
@@ -68,11 +70,14 @@ $conn->close();
             <p id ="r1_info"><b><i>Fully furnished with cleaning services provided twice a week. Includes high-speed internet and access to the common room.</i></b></p>
             <button type="submit" id="book_now1">Book Now!</button>
 
-            <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+            <?php 
+            if ($booked_room_num == $rooms[0]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
         </form>
 
@@ -90,11 +95,14 @@ $conn->close();
             <p id ="r2_info"><b><i>A comfortable, ready-to-occupy room with scheduled cleaning services, reliable high-speed internet, and access to shared common areas.</i></b></p>
             <button type="submit" id="book_now2">Book Now!</button>
 
-             <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+            <?php 
+            if ($booked_room_num == $rooms[1]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
 
         </form>
@@ -116,12 +124,15 @@ $conn->close();
             <p id ="r3_info"><b><i>Well-prepared living space with biweekly cleaning, dependable internet connectivity, and shared common room privileges with air conditioning.</i></b></p>
             <button type="submit" id="book_now3">Book Now!</button>
 
-             <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+             
+            <?php 
+            if ($booked_room_num == $rooms[2]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
-
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
         </form>
 
@@ -140,11 +151,15 @@ $conn->close();
             <p id ="r4_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
             <button type="submit" id="book_now4">Book Now!</button>
 
-             <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+             
+            <?php 
+            if ($booked_room_num == $rooms[3]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
 
         </form>
@@ -163,11 +178,15 @@ $conn->close();
             <p id ="r5_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
             <button type="submit" id="book_now5">Book Now!</button>
 
-             <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+            
+            <?php 
+            if ($booked_room_num == $rooms[4]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
 
         </form>
@@ -187,11 +206,15 @@ $conn->close();
             <p id ="r6_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
             <button type="submit" id="book_now6">Book Now!</button>
 
-             <?php if ($payment_status == 'approved'): ?>
-            <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
+            
+            <?php 
+            if ($booked_room_num == $rooms[5]['room_num']): 
+            if ($payment_status == 'approved'): ?>
+                <a href="dashboard.php" id="gotodashboard">Open your dashboard</a>
             <?php elseif ($payment_status == 'pending'): ?>
-            <span id="approval">Payment Pending Approval</span>
-            <?php endif; ?>
+                <span id="approval">Payment Pending Approval</span>
+            <?php endif; 
+            endif; ?>
 
 
         </form>
