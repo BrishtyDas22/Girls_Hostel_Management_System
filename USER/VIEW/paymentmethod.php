@@ -1,10 +1,11 @@
 <?php
-
 session_start();
 if(!isset($_SESSION["user_id"])){
     header("Location: ../VIEW/Login.php");
     exit();
 }
+
+$selected_room = isset($_GET['room']) ? $_GET['room'] : "";
 ?>
 <!DOCTYPE html>
 <head>
@@ -23,25 +24,25 @@ if(!isset($_SESSION["user_id"])){
     </div>
 
     <div id="payment">
-        <form method="post" id="paymentform">
+        <form method="post" action="../CONTROL/paymentprocess.php" id="paymentform">
             <label>Payment Form</label>
             <hr>
             <label>Username:</label><br/>
              <input type="text" id="name" name="name" value="<?php echo $_SESSION["username"]; ?>">
              <hr>
              <label for="roomnum">Room Number:</label>
-             <input type="text" id="room_num">
+             <input type="text" name="room_num" id="room_num" value="<?php echo $selected_room; ?>" readonly>
               <hr>
              <label for="payment">Payment Method:</label>
-             <input type="radio" id="bkash" name="bkash" value="bkash">Bkash
-             <input type="radio" id="Naagad" name="nagad" value="nagad">Nagad
+             <input type="radio" name="payment_method" value="bkash" required> Bkash
+             <input type="radio" name="payment_method" value="nagad" required> Nagad
 
              <hr>
              <label for="phonenum">Transition Number:</label>
-             <input type="text" id="phone_num" name="phonenumber">
+             <input type="text" id="phone_num" name="phonenumber" value="01615663862" readonly>
                <hr>
              <label for="transaction_id">Transaction ID:</label>
-             <input type="text" id="transid" name="transactionid">
+             <input type="text" id="transid" name="transactionid" required>
 
              <button type="submit" id="submit-btn" name="submit">Confirm Payment </button> 
 
