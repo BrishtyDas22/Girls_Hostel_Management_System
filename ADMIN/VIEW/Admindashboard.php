@@ -5,6 +5,7 @@ if (!isset($_SESSION["username"])) {
     header("Location: adminLogin.php");
     exit();
 }
+$img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profile_pic"] : "../IMAGES/dp.png";
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,9 +51,9 @@ if (!isset($_SESSION["username"])) {
 
     </div>
     <div class="content">
-        <h1>Welcome to the Admin Dashboard</h1>
+        <h2><?php echo $_SESSION['username']; ?>, Welcome to Happy Life!</h2>
           <div id="profilebox">
-        <img src="../IMAGES/dp.png" id="profileicon" alt="profile" onclick="location.href='../VIEW/adminprofile.php'">
+        <img src="<?php echo $img; ?>" id="profileicon" alt="profile" onclick="location.href='../VIEW/adminprofile.php'">
     </div>
 
 </div>
