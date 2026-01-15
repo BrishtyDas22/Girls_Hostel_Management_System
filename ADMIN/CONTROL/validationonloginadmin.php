@@ -37,20 +37,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $conn = openConn();
         $result = getuserforlogin1($conn, $name, $email);
 if ($result->num_rows > 0) {
-   // $db_password = "";
-    foreach ($result as $row) {
+    
+  $row = $result->fetch_assoc();
         $db_password = $row['password'];
-    }
+    
 
     if ($password === $db_password) {
         session_start();
     
- foreach ($result as $row) {
+
         $_SESSION["username"]    = $row['name'];
         $_SESSION["email"]       = $row['email'];
         $_SESSION["phonenumber"] = $row['phonenumber'];
         $_SESSION["blood"]       = $row['blood'];
-    }
+        $_SESSION["profile_pic"] = $row['profile_pic'];
+    
            $success_msg="Login successful!";
 
     } else {
