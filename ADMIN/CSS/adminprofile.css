@@ -59,27 +59,20 @@ body {
     left: 0;
     top: 0;
 }
-
+.profile-circle {
+    margin-top: 30px; 
+    text-align: center; 
+}
 .profile-circle img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 25px;
+   
     object-fit: cover;
     border: 1px solid #ddd;
 }
 
-.side-btn {
-    width: 100%; 
-     background-color: rgb(4, 1, 53);
 
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
 
 .right-section {
     background: white;
@@ -138,4 +131,32 @@ body {
 
 button:hover {
     opacity: 0.9;
+}
+.readonly-field {
+        
+    cursor: not-allowed;              
+    border: 1px solid #ced4da;
+}
+
+#fileToUpload {
+    display: none;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(4, 1, 53); 
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid rgb(4, 1, 53);
+}
+
+.custom-file-upload:hover {
+    background-color:rgb(4, 1, 53);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
