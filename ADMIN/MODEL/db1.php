@@ -4,7 +4,8 @@ function openConn() {
     $user = "root";
     $pass = "";
     $dbname = "wt_project";
-    $conn = new mysqli($host, $user, $pass, $dbname);
+     $port = 3307;
+    $conn = new mysqli($host, $user, $pass, $dbname, $port);
     if ($conn->connect_error) { die("Connection Fail: ". $conn->connect_error); }
     return $conn;
 }
