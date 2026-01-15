@@ -1,5 +1,5 @@
 <?php
-seesion_start();
+session_start();
 
 include("../MODEL/db.php");
 
@@ -9,14 +9,15 @@ $conn=openConn();
 
     $username = $_POST['name'];
     $room_num = $_POST['room_num'];
-    $phone    = $_POST['phonenumber'];
+    $phone    = "01615663862";
     $trans_id = $_POST['transactionid'];
 
     $method = isset($_POST['payment_method']) ? $_POST['payment_method'] : "";
 
     if (addPayment($conn, $username, $room_num, $phone, $method, $trans_id)) {
-        $_SESSION['payment_msg'] = "Payment Submitted! Status: Pending.";
+        $_SESSION['payment_msg'] = "Payment Submitted! Status: Please wait for approval.";
         header("Location: ../VIEW/afterlogin.php"); 
+        exit();
     } else {
         echo "Error: " . $conn->error;
     }
@@ -26,7 +27,7 @@ $conn=openConn();
 
 
 
-}
+
 
 
 ?>
