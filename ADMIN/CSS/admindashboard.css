@@ -393,3 +393,20 @@ body{
     top: 0px;
     left: 10px;
 }
+
+#profilebox{
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+#profileicon{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+ 
+}
+#profileicon:hover{
+    transform: scale(1.1);
+}
+
