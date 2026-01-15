@@ -39,11 +39,12 @@ if ($row['status'] !== 'approved') {
 </div>
 
 <div id="sidebar">
-    <a href="dashboard.php" id="overview">Overview</a>
-    <a href="complaint.php" id="complaints">Complaints</a>
-    <a href="notices.php" id="notices">Notices</a>
-    <a href="notification.php" id="notification">Notifications</a>
-    <a href="afterlogin.php" id="booknewroom">Book New Room</a>
+    
+    <a href="dashboard.php" id="overview"><img src="../images/webpage-list.gif" alt="overviewimg" id="overviewimg">Overview</a>
+    <a href="complaint.php" id="complaints"><img src="../images/bad-review.gif" alt="complaints" id="complaintsimg">Complaints</a>
+    <a href="notices.php" id="notices"><img src="../images/notice.gif" alt="notice" id="noticeimg">Notices</a>
+    <a href="notification.php" id="notification"><img src="../images/new-message.gif" alt="notification" id="notificationimg">Notifications</a>
+    <a href="afterlogin.php" id="booknewroom"><img src="../images/add.gif" alt="newroom"id="booknewroomimg">New Room</a>
 </div>
 
  
