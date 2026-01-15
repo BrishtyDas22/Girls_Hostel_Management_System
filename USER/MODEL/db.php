@@ -75,6 +75,20 @@ function getRoomDetails($conn) {
     return $conn->query($sql);
 }
 
+function addPayment($conn, $username, $room_number, $phone, $payment_method, $trans_id){
+    $username = $conn->real_escape_string($username);
+    $room_number = $conn->real_escape_string($room_number);
+    $phone = $conn->real_escape_string($phone);
+    $method = $conn->real_escape_string($payment_method);
+    $trans_id = $conn->real_escape_string($trans_id);
+
+    $sql="INSERT INTO payment (username, room_number, transition_number, payment_method, transition_id, status) 
+            VALUES ('$username', '$room_number', '$phone', '$method', '$trans_id', 'pending')";
+            
+    return $conn->query($sql);
+
+}
+
 
 
 
