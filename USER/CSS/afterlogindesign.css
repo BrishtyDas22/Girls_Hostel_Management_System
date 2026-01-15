@@ -523,4 +523,29 @@ h3{
     width: 160px;
     height: 40px;
 }
+/* Position the status message relative to the Book Now button */
+#approval, #gotodashboard {
+    position: absolute;
+    top: 220px;
+    left: 650px; /* Positioned to the right of the 480px left button */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
 
+#approval {
+    background-color: #FFC107; /* Yellow for pending */
+    color: black;
+}
+
+#gotodashboard {
+    background-color: #28a745; /* Green for approved */
+    color: white;
+    text-decoration: none;
+}
