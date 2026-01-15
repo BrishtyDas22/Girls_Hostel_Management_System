@@ -404,7 +404,8 @@ body{
     width: 55px;
     height: 55px;
     cursor: pointer;
- 
+ border-radius: 50%;
+ object-fit: cover;
 }
 #profileicon:hover{
     transform: scale(1.1);
