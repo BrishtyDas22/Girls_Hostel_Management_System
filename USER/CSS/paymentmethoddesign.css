@@ -1,0 +1,94 @@
+body{
+    background-color: #d6d6d6;
+    margin: 0px;
+    padding: 0px;
+
+
+
+}
+
+#header_design{
+    
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    margin: 0px;
+    color:black;
+    display: flex;
+
+
+
+
+}
+#payment{
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 90%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow:  #030211e1 0px 4px 8px 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+#header_logo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    left: 30px;
+    
+    
+}
+#header_text{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    color: #012957d5;
+    font-size: 20px;
+}
+#name,#room_num,#phone_num,#transid{
+    font-family: 'Times New Roman', Times, serif;
+    width: 98%;
+    height: auto;
+    margin-left: 10px;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow:  #3c3c3ce1 0px 2px 2px 0px;
+    border:2px solid #012957d5;
+   
+
+
+}
+#submit-btn{
+    margin-top: 30px;
+    margin-left: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #012957d5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+
+}
