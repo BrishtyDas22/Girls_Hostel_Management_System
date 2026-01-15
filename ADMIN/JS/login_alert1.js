@@ -1,4 +1,4 @@
 if (msg === "Login successful!") {
     alert(msg);
- window.location.href = "../VIEW/adminafterlogin.php";
+ window.location.href = "../VIEW/Admindashboard.php";
 }
