@@ -11,7 +11,7 @@ include("../CONTROL/validationonloginadmin.php");
     <div class="bg-div">
     <img src="../IMAGES/bg.avif" class="bg-img" alt="">
 </div>
-    <img src="../IMAGES/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="location.href='../../USER/VIEW/frontpage.php'">
+    <img src="../IMAGES/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="gotofrontpage()">
 
 <div class="login-box">
      <div class="left-div">
@@ -59,5 +59,6 @@ include("../CONTROL/validationonloginadmin.php");
 </script>
 
 <script src="../JS/login_alert1.js"></script>
+<script src="../JS/gotofrontpage.js"></script>
 </body>
 </html>
