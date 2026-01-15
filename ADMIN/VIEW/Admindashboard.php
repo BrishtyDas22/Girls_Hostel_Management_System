@@ -51,6 +51,9 @@ if (!isset($_SESSION["username"])) {
     </div>
     <div class="content">
         <h1>Welcome to the Admin Dashboard</h1>
+          <div id="profilebox">
+        <img src="../IMAGES/dp.png" id="profileicon" alt="profile" onclick="location.href='../VIEW/adminprofile.php'">
+    </div>
 
 </div>
 
