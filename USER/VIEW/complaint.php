@@ -57,6 +57,7 @@ if (!isset($_SESSION["username"])) {
 
             <label>Category</label><br>
             <select name="category" id="category" required>
+                <option value="Select category">--Select Category--</option>
                 <option value="Maintenance">Maintenance</option>
                 <option value="WiFi">WiFi</option>
                 <option value="Plumbing">Plumbing</option>
@@ -91,10 +92,10 @@ if (!isset($_SESSION["username"])) {
             $result = getUserComplaints($conn, $_SESSION['user_id']);
             if ($result && $result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
-                    $statusColor = (strtolower($row['status']) == 'resolved') ? 'green' : 'orange';
+                    $statusColor = (($row['status']) == 'resolved') ? 'green' : 'orange';
                     $cid = $row['complaint_id']; 
                     $cat = $row['category'];
-                    $desc = htmlspecialchars($row['Complaintdescription'], ENT_QUOTES);
+                    $desc = htmlspecialchars($row['Complaintdescription']);
                     
                     echo "<tr>
                             <td>$cid</td>
@@ -108,7 +109,10 @@ if (!isset($_SESSION["username"])) {
                           </tr>";
                 }
             } else {
-                echo "<tr><td colspan='5' style='text-align:center;'>No complaints found.</td></tr>";
+                echo "<tr>
+                <td id='no_complaints'>No complaints found.</td>
+                
+                </tr>";
             }
             $conn->close();
             ?>
