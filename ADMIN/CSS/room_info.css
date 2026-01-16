@@ -1,0 +1,142 @@
+/* main box  */
+#room-management-box {
+    position: absolute;
+    top: 90px; 
+    left: 285px; 
+    width: 1220px; 
+    font-family: 'Times New Roman', serif;
+}
+
+/* ২.upurer vaag ta */
+.form-section-container {
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 15px 30px; 
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* ৩. error er jnno */
+.error-box {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-left: 6px solid #d9534f;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ৪. input field gulur jnno */
+.field { 
+    margin-bottom: 10px; 
+    white-space: nowrap; /* likha jate venge na jai */
+}
+
+.field label {
+    display: inline-block;
+    width: 160px;
+    font-size: 16px; 
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.field input[type="text"] {
+    width: 250px;
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-options {
+    display: inline-block; /* radio button label er pase anar jnno */
+    vertical-align: middle;
+}
+
+.radio-options input {
+    margin-left: 10px;
+}
+
+
+.button-group {
+    margin-top: 15px;
+    display: block;
+    height: 45px; 
+    white-space: nowrap; 
+}
+
+.action-btn {
+    display: inline-block;
+    min-width: 110px; 
+    padding: 8px 18px; 
+    color: white;
+    border: 2px solid #d3d3d3; 
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.add-btn { background-color: #28a745; }
+.update-btn { background-color: #000055; }
+.delete-btn { background-color: #ab1010; }
+
+
+#cancel-btn { 
+    background-color: #e7a453; 
+}
+
+
+.action-btn:hover {
+    border-color: #ffffff;
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.table-section-container {
+    background-color: #ffffff;
+    padding: 20px 25px; 
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+#info-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#info-table thead tr { 
+    background-color: #7a8187; 
+    color: white; 
+}
+#info-table th, #info-table td { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+}
+
+
+.table-edit-btn, .table-delete-btn {
+    border: 1px solid #d3d3d3;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+.table-edit-btn { background-color: #007bff; margin-right: 5px; }
+.table-delete-btn { background-color: #dc3545; }
+
+.table-edit-btn:hover, .table-delete-btn:hover {
+    border-color: #ffffff;
+    transform: scale(1.15); 
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
