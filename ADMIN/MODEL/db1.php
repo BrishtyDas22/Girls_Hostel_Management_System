@@ -61,4 +61,26 @@ function deleteRoom($conn, $room_num) {
     $sql = "DELETE FROM room_info_table WHERE room_num='$room_num'";
     return $conn->query($sql);
 }
+
+
+
+function getAllStudents($conn) {
+    return $conn->query("SELECT * FROM user_registration");
+}
+
+function addStudent($conn, $name, $email, $phone, $pass, $blood) {
+    $sql = "INSERT INTO user_registration (name, email, phonenumber, password, c_password, blood) 
+            VALUES ('$name', '$email', '$phone', '$pass', '$pass', '$blood')";
+    return $conn->query($sql);
+}
+
+function updateStudent($conn, $name, $email, $phone, $pass, $c_pass, $blood) {
+ 
+    $sql = "UPDATE user_registration SET name='$name', phonenumber='$phone', password='$pass', c_password='$c_pass', blood='$blood' WHERE email='$email'";
+    return $conn->query($sql);
+}
+
+function deleteStudent($conn, $email) {
+    return $conn->query("DELETE FROM user_registration WHERE email='$email'");
+}
 ?>
