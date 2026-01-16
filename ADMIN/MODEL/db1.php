@@ -62,7 +62,7 @@ function deleteRoom($conn, $room_num) {
     return $conn->query($sql);
 }
 
-
+//manage students functions
 
 function getAllStudents($conn) {
     return $conn->query("SELECT * FROM user_registration");
