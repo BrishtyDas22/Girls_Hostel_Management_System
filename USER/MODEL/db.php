@@ -89,6 +89,43 @@ function addPayment($conn, $username, $room_number, $phone, $payment_method, $tr
 
 }
 
+function addComplaint($conn, $userId, $name, $description, $category) {
+    $userId = (int)$userId;
+    $name = $conn->real_escape_string($name);
+    $description = $conn->real_escape_string($description);
+    $category = $conn->real_escape_string($category);
+    
+    $sql = "INSERT INTO complaint_table (ID, name, Complaintdescription, category, status) 
+            VALUES ($userId, '$name', '$description', '$category', 'pending')";
+    return $conn->query($sql);
+}
+
+function getUserComplaints($conn, $userId) {
+    $userId = (int)$userId;
+    $sql = "SELECT * FROM complaint_table WHERE ID = $userId ORDER BY complaint_id DESC";
+    return $conn->query($sql);
+}
+
+
+function deleteComplaint($conn, $complaint_id, $user_id) {
+    $complaint_id = (int)$complaint_id;
+    $user_id = (int)$user_id;
+  
+    $sql = "DELETE FROM complaint_table WHERE complaint_id = $complaint_id AND ID = $user_id";
+    return $conn->query($sql);
+}
+
+
+function updateComplaint($conn, $complaint_id, $category, $description) {
+    $complaint_id = (int)$complaint_id;
+    $category = $conn->real_escape_string($category);
+    $description = $conn->real_escape_string($description);
+    
+    $sql = "UPDATE complaint_table SET category='$category', Complaintdescription='$description' 
+            WHERE complaint_id = $complaint_id";
+    return $conn->query($sql);
+}
+
 
 
 
