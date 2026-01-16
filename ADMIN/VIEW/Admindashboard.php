@@ -23,29 +23,30 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
     <nav class="links"></nav>
         <ul id="navlist">
             <img src="../IMAGES/layout.png" alt="dasboardlogo" id="dashboardlogo">
-           <button type="submit" id="dashboard">Dashboard</button>
+           <button type="button" id="dashboard">Dashboard</button>
+
+<img src="../IMAGES/roominfo.png" alt="roominfologo" id="roominfologo">
+    <button type="button" id="roominfo">Room Info</button>
+
+<img src="../IMAGES/home-office.png" alt="roombookinglogo" id="roombookinglogo">
+    <button type="button" id="managebookings">Room Bookings</button>
 
            <img src="../IMAGES/management.png" alt="managestudentlogo" id="managestudentlogo">
-           <button type="submit" id="manageusers" >Manage Users</button>
-
-           <img src="../IMAGES/engineer.png" alt="stafflogo" id="stafflogo">
-           <button type="submit" id="assignstaff" >Assign staff</button>
-
-              <img src="../IMAGES/home-office.png" alt="roombookinglogo" id="roombookinglogo">
-           <button type="submit" id="managebookings">Room & Bookings</button>
+           <button type="button" id="manageusers" >Manage Students</button>
 
            <img src="../IMAGES/complaint.png" alt="complaintslogo" id="complaintslogo">
-           <button type="submit" id="complaints" >Complaints</button>
-
-              <img src="../IMAGES/bell.png" alt="noticeslogo" id="noticeslogo">
-           <button type="submit" id="notices" >Notices</button>
-
+           <button type="button" id="complaints" >Complaints</button>
+                         <img src="../IMAGES/bell.png" alt="noticeslogo" id="noticeslogo">
+           <button type="button" id="notices" >Notices</button>
 
                 <img src="../IMAGES/review.png" alt="studentfeedbacklogo" id="studentfeedbacklogo">
-           <button type="submit" id="Student-feedback" >Student Feedback</button>
+           <button type="button" id="Student-feedback" >Student Feedback</button>
 
-              <img src="../IMAGES/exit.png" alt="logoutlogo" id="logoutlogo">
-              <button type="submit" id="logout" onclick="gotologout()">Logout</button>
+           <img src="../IMAGES/engineer.png" alt="stafflogo" id="stafflogo">
+           <button type="button" id="assignstaff" >Assign staff</button>
+
+ <img src="../IMAGES/exit.png" alt="logoutlogo" id="logoutlogo">
+              <button type="button" id="logout" onclick="gotologout()">Logout</button>
         </ul>
     </nav>
 
@@ -61,7 +62,7 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 
 <div id="insidecontent">
     <form method="post" id="roomcounts">
-        <Label id="roomnum">6</Label>
+        <Label id="roomnum"></Label>
         <br>
         <label id="infoofroom">Total Rooms</label>
         <img src="../IMAGES/bed.png" alt="bedlogo" id="bedlogo">
