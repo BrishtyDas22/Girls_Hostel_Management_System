@@ -70,6 +70,8 @@ $conn->close();
     <a href="notices.php" id="notices"><img src="../images/notice.gif" alt="notice" id="noticeimg">Notices</a>
     <a href="notification.php" id="notification"><img src="../images/new-message.gif" alt="notification" id="notificationimg">Notifications</a>
     <a href="afterlogin.php" id="booknewroom"><img src="../images/add.gif" alt="newroom"id="booknewroomimg">New Room</a>
+     <a href="feedback.php" id="givefeedback"><img src="../images/feedback.gif" alt="feedback" id="feedbackimg">Feedback</a>
+
 </div>
 
 <div id="my_dashboard">
@@ -84,7 +86,7 @@ $conn->close();
         <div class="room-data">
             <h3>Booked Room Details</h3>
             <p><b>Room Number:</b> <?php echo $room_num; ?></p>
-            <p><b>Status:</b> <span style="color: green; font-weight: bold;">Confirmed & Approved</span></p>
+            <p><b>Status:</b> <span id="approved">Confirmed & Approved</span></p>
             <p><b>Price:</b> <?php echo $room_details['price'] ?? '10000'; ?></p>
             <hr>
             <h3>Payment Information</h3>
