@@ -440,4 +440,32 @@ th{
     border-radius: 4px; 
     cursor: pointer;
  }
+ .btn-edit {
+    background-color: #0b97f5;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+}
+#no_complaints {
+    position: relative;
+    left: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
  
