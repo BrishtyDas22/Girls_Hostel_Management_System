@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             deleteStudent($conn, $email);
         }
     } else {
-        $_SESSION['error'] = $error ;
+        $_SESSION['error'] = $error;
     }
 
     header("Location: ../VIEW/manage_students.php");
