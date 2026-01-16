@@ -93,7 +93,8 @@ if(!isset($_SESSION["user_id"])){
     </form>
 
 </div>
-<a href="../CONTROL/logout.php"><button type="sumit" id="logout">Logout</button></a>
+<button type="button" id="logout" onclick="handlelogout()" >Logout</button></a>
+ <script src="../JS/confirmlogout.js"></script>
 
 
 
