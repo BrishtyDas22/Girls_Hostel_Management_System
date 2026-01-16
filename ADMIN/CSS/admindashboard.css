@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+/*side bar er upurer panel */
+.panel {
+    border: 2px solid #2b2b2df4;
+    background-color: #7b7b7b;
+    color: white;
+    width: 250px;
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.sidebar {
+    position: absolute;
+    top: 82px;
+    left: 0px;
+    width: 253px;
+    height: 100%;
+    background-color: #535353;
+}
+
+
+.sidebar button {
+    position: absolute;
+    left: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    height: 50px;
+    width: 230px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 65px;
+    box-sizing: border-box;  
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    z-index: 1; 
+}
+
+.sidebar button:hover {
+    background-color: #7b7b7b;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.08); 
+   
+}
+
+
+#dashboard {
+    
+    top: 20px;
+ }
+#roominfo {
+     top: 80px; 
+    }
+#managebookings {
+     top: 140px;
+     }
+#manageusers { 
+    top: 200px;
+ }
+#complaints {
+     top: 260px;
+     }
+#notices { 
+    top: 320px;
+ }
+#Student-feedback {
+     top: 380px;
+     }
+#assignstaff {
+     top: 440px; 
+    }
+#logout {
+     top: 500px; 
+    }
+
+
+.sidebar img {
+    position: absolute;
+    left: 18px; 
+    width: 32px;
+    height: 32px;
+    z-index: 10; 
+    pointer-events: none; 
+    transition: all 0.3s ease; 
+}
+
+#dashboardlogo {
+    
+    top: 29px; 
+}
+#roominfologo {
+     top: 89px;
+     }
+#roombookinglogo { 
+    top: 149px; 
+}
+#managestudentlogo {
+     top: 209px; 
+    }
+#complaintslogo { 
+    top: 269px;
+ }
+#noticeslogo {
+     top: 329px;
+     }
+#studentfeedbacklogo { 
+    top: 389px; 
+}
+#stafflogo { 
+    top: 449px;
+ }
+#logoutlogo { 
+    top: 509px; 
+}
+
+/* header and profile er jnno */
+.content {
+    position: absolute;
+    top: 0;
+    left: 253px;
+    right: 0;
+    height: 82px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    line-height: 40px;
+    border: 2px solid #c6c6c6f4;
+}
+
+#profilebox {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+#profileicon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* cardgulur jnno */
+#roomcounts, #studentcounts, #pendingcomplaints, #revenue {
+    position: absolute;
+    top: 100px;
+    width: 250px;
+    height: 70px; 
+    background-color: #f5f5f5;
+    border: 2px solid #c6c6c6f4;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#roomcounts { left: 270px; }
+#studentcounts { left: 580px; }
+#pendingcomplaints { left: 890px; }
+#revenue { left: 1200px; }
+
+/* --- card er text er jnno--- */
+#roomnum, #studentnum, #complaintnum, #revenuenum {
+    position: absolute;
+    bottom: 5px; 
+    left: 20px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#infoofroom, #infoofstudents, #infoofcomplaints, #infoofrevenue {
+    position: absolute;
+    top: 5px;      
+    left: 20px;
+    font-weight: bold; 
+    font-size: 15px;
+}
+
+
+#bedlogo, #userslogo, #complaintlogo, #revenuelogo {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+}
+
+
+#recentbookingtable {
+    position: absolute;
+    top: 280px; 
+    left: 270px;
+    width: 1220px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border: 2px solid #c6c6c6f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#recentbookingsheading {
+    position: absolute;
+    top: -45px; 
+    left: 10px;  
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #000;
+}
