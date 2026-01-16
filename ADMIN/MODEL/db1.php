@@ -33,4 +33,32 @@ function updateAdminProfile($conn, $name, $phone, $blood, $file_name, $email, $p
     
     return $conn->query($sql);
 }
+
+
+//  Database theke sob room anar function
+function getAllRooms($conn) {
+    // Database image onujayi query
+    $sql = "SELECT * FROM room_info_table"; 
+    return $conn->query($sql);
+}
+
+//  Notun room add korar function
+function addRoom($conn, $room_num, $price, $type, $capacity, $student) {
+    $sql = "INSERT INTO room_info_table (room_num, price, `ac/non-ac`, capacity, present_student) 
+            VALUES ('$room_num', '$price', '$type', '$capacity', '$student')";
+    return $conn->query($sql);
+}
+
+//  Room update korar function
+function updateRoom($conn, $room_num, $price, $type, $capacity, $student) {
+    $sql = "UPDATE room_info_table SET price='$price', `ac/non-ac`='$type', capacity='$capacity', present_student='$student' 
+            WHERE room_num='$room_num'";
+    return $conn->query($sql);
+}
+
+//  Room delete korar function
+function deleteRoom($conn, $room_num) {
+    $sql = "DELETE FROM room_info_table WHERE room_num='$room_num'";
+    return $conn->query($sql);
+}
 ?>
