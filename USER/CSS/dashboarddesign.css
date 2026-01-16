@@ -69,7 +69,7 @@ position: absolute;
 top: 100px;
 left: 20px;
 width: 250px;
-height: 361px;
+height: 420px;
 color: rgb(8, 242, 125);
 font-family: 'Times New Roman', Times, serif;
 border-radius: 10px;
@@ -197,9 +197,30 @@ cursor: pointer;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
+#givefeedback{
+     position: absolute;
+    top: 360px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
 
 #overview:hover, #complaints:hover, #notices:hover, 
-#notification:hover, #booknewroom:hover {
+#notification:hover, #booknewroom:hover, #givefeedback:hover {
     background-color: rgb(8, 242, 125); 
     color: white; 
     box-shadow: #5f5f61e1 0px 6px 12px 0px; 
@@ -311,6 +332,26 @@ cursor: pointer;
     transition: all 0.3s ease-in-out;
 
 }
+#feedbackimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
 
 #my_dashboard {
     position: absolute;
@@ -353,4 +394,9 @@ cursor: pointer;
 .room-data p {
     font-size: 25px;
     margin: 10px 0;
+}
+#approved{
+    color: green; 
+    font-weight: bold;
+
 }
