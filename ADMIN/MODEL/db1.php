@@ -83,4 +83,80 @@ function updateStudent($conn, $name, $email, $phone, $pass, $c_pass, $blood) {
 function deleteStudent($conn, $email) {
     return $conn->query("DELETE FROM user_registration WHERE email='$email'");
 }
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function getUserId($conn, $u_name) {
+    $sql = "SELECT ID FROM user_registration WHERE name = '$u_name'";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc();
+}
+
+function getRoomData($conn, $r_num) {
+    $sql = "SELECT room_id, capacity, present_student FROM room_info_table WHERE room_num = '$r_num'";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc();
+}
+
+// ID theke Name ber kora
+function getNameFromId($conn, $id) {
+    $sql = "SELECT name FROM user_registration WHERE ID = '$id'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    return $row ? $row['name'] : "";
+}
+
+// Room ID theke Room Number
+function getRoomNumFromId($conn, $r_id) {
+    $sql = "SELECT room_num FROM room_info_table WHERE room_id = '$r_id'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    return $row ? $row['room_num'] : "";
+}
+
+// Duplicate User Validation
+function isAlreadyBooked($conn, $u_id) {
+    $sql = "SELECT * FROM book_table WHERE ID = '$u_id'";
+    $result = $conn->query($sql);
+    return ($result->num_rows > 0);
+}
+
+function updateRoomCount($conn, $r_id, $type) {
+    $sql = ($type == 'increase') ? 
+        "UPDATE room_info_table SET present_student = present_student + 1 WHERE room_id = '$r_id'" : 
+        "UPDATE room_info_table SET present_student = present_student - 1 WHERE room_id = '$r_id'";
+    return $conn->query($sql);
+}
+
+function getAllBookings($conn) {
+    return $conn->query("SELECT * FROM book_table");
+}
+
+function addBooking($conn, $u_id, $r_id, $t_num, $p_method, $t_id, $status) {
+    $sql = "INSERT INTO book_table (ID, room_id, transaction_number, payment_method, transaction_id, status) 
+            VALUES ('$u_id', '$r_id', '$t_num', '$p_method', '$t_id', '$status')";
+    return $conn->query($sql);
+}
+
+function updateBooking($conn, $b_id, $t_num, $p_method, $t_id, $status) {
+    $sql = "UPDATE book_table SET transaction_number='$t_num', payment_method='$p_method', 
+            transaction_id='$t_id', status='$status' WHERE booking_id='$b_id'";
+    return $conn->query($sql);
+}
+
+function deleteBooking($conn, $b_id) {
+    $sql = "DELETE FROM book_table WHERE booking_id = '$b_id'";
+    return $conn->query($sql);
+}
+
+function getRoomIdFromBooking($conn, $b_id) {
+    $sql = "SELECT room_id FROM book_table WHERE booking_id = '$b_id'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    return $row['room_id'];
+}
 ?>
