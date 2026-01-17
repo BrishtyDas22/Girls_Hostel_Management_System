@@ -1,0 +1,191 @@
+/*  Main container  */
+.main-body-container {
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    right: 20px;
+}
+
+/*  Input form section box  */
+.booking-section-box {
+    position: relative;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #c6c6c6f4;
+    margin-bottom: 30px;
+}
+
+/*  Table section box */
+.table-section-box {
+    position: relative;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #c6c6c6f4;
+    margin-bottom: 30px;
+}
+
+/* Error box design with left red border */
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    border-left: 6px solid #dc3545;
+}
+
+/*  Form label and input field thik kora */
+.form-row {
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+}
+
+.form-row input[type="text"] {
+    width: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', serif;
+}
+
+/*  Button group position */
+.btn-group {
+    padding-left: 140px;
+    margin-top: 15px;
+}
+
+
+.btn-green, .btn-orange, .btn-blue, .btn-red, .btn-edit, .btn-delete {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    border: 2px solid #d3d3d3;
+   transition: all 0.3s ease-out;
+}
+
+
+.btn-green {
+    background: #28a745;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.btn-green:hover {
+    transform: scale(1.1); 
+    border: 2px solid #ffffff; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-orange {
+    background: #f0ad4e;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.btn-orange:hover {
+    transform: scale(1.1);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-blue {
+    background: #007bff;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.btn-blue:hover {
+    transform: scale(1.1);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-red {
+    background: #d9534f;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.btn-red:hover {
+    transform: scale(1.1);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.styled-table th {
+    background: #7d848a;
+    color: white;
+    padding: 12px;
+    font-family: 'Times New Roman', serif;
+}
+
+.styled-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+
+.btn-edit {
+    background: #007bff;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    transform: scale(1.1); 
+    border: 2px solid #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-delete{
+    background: #dc3545;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.btn-delete:hover {
+    transform: scale(1.1); 
+    border: 2px solid #ffffff; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.status-pending {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.status-approved {
+    color: #28a745; 
+    font-weight: bold;
+}
+.booking-title {
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+}
