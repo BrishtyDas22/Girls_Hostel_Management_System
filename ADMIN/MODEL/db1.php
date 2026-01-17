@@ -159,4 +159,28 @@ function getRoomIdFromBooking($conn, $b_id) {
     $row = $result->fetch_assoc();
     return $row['room_id'];
 }
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+// --- Feedback Management Functions ---
+
+function getAllFeedback($conn) {
+    return $conn->query("SELECT * FROM feedback_table");
+}
+
+function updateFeedbackReply($conn, $f_id, $reply) {
+    $sql = "UPDATE feedback_table SET reply='$reply' WHERE feedback_id='$f_id'";
+    return $conn->query($sql);
+}
+
+function deleteFeedback($conn, $f_id) {
+    $sql = "DELETE FROM feedback_table WHERE feedback_id='$f_id'";
+    return $conn->query($sql);
+}
+
 ?>
