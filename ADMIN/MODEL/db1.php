@@ -183,4 +183,18 @@ function deleteFeedback($conn, $f_id) {
     return $conn->query($sql);
 }
 
+/////////////////////////////////////////////////////////////
+function getAllComplains($conn) {
+    return mysqli_query($conn, "SELECT * FROM complain_table");
+}
+
+function updateComplain($conn, $id, $status) {
+    $sql = "UPDATE complain_table SET status = '$status' WHERE complain_id = '$id'";
+    return mysqli_query($conn, $sql);
+}
+
+function deleteComplain($conn, $id) {
+    $sql = "DELETE FROM complain_table WHERE complain_id = '$id'";
+    return mysqli_query($conn, $sql);
+}
 ?>
