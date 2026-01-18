@@ -255,5 +255,14 @@ function updateNotiStatus($conn) {
     $sql = "UPDATE notification_table SET is_read = 1 WHERE is_read = 0";
     return $conn->query($sql);
 }
+////////////////////////////////////////
+
+//dashboard er jnno functions
+// Shudhu table er shob data niye ashar function(chutu cardgulur jnno)
+function getAllDataFromTable($connection, $tableName) {
+    $query = "SELECT * FROM $tableName";
+    $resultData = $connection->query($query);
+    return $resultData;
+}
 
 ?>
