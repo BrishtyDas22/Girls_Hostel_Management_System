@@ -142,13 +142,108 @@ body {
     position: absolute;
     top: 13px;
     right: 25px;
+    text-align: right;
 }
 
 #profileicon {
+    display: inline-block; 
+    vertical-align: middle;
     width: 55px;
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+}
+/* Noti icon-er wrapper jeta profile icon-er left-e thakbe */
+#noti-wrapper {
+    position: relative;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 15px; 
+    cursor: pointer;
+}
+
+#noti-icon {
+    width: 35px;
+    height: 35px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* Mouse bell icon-er upor nile seta aktu boro  hobe */
+#noti-wrapper:hover #noti-icon {
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+}
+
+
+#noti-badge {
+    pointer-events: none; 
+}
+
+/* Red Circle design */
+#noti-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    display: none; 
+    text-align: center;
+    line-height: 20px;
+    border: 2px solid white;
+}
+
+/* Notification Pop-up Style */
+#noti-popup {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    text-align: left;
+}
+
+.noti-header {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* Box hide/show korar class */
+.hidden {
+    display: none;
+}
+/* Noti list-er proti ti msg styling */
+.noti-item {
+    padding: 12px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #333;
+    cursor: default;
+}
+
+.noti-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Empty message jokhon kono notification thakbe na */
+.no-noti {
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
 }
 
 /* cardgulur jnno */
