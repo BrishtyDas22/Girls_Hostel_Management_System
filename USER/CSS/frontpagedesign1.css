@@ -529,6 +529,29 @@ h2{
 }
 
 
+#room_box, #room_box1, #room_box2, #room_box3, #room_box4, #room_box5 {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+
+#room_box:hover, #room_box1:hover, #room_box2:hover, 
+#room_box3:hover, #room_box4:hover, #room_box5:hover {
+    transform: translateY(-5px); 
+    box-shadow: #030211e1 0px 8px 16px 0px; 
+}
+
+#register, #login, #Alogin {
+    transition: transform 0.2s ease-in-out;
+}
+
+#register:hover, #login:hover, #Alogin:hover {
+    transform: scale(1.03); 
+}
+
+#register:active, #login:active, #Alogin:active {
+    transform: scale(0.97); 
+}
+
 
 
 
