@@ -58,7 +58,7 @@ body{
     height: 30px;
     
 }
-#register_link{
+#register_link,#forget_password{
     display: block;
     text-align: center;
     margin-top: 15px;
