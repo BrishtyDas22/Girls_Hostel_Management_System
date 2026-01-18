@@ -219,5 +219,27 @@ function updateStaff($conn, $staff_id, $staff_name, $complain_id) {
 function deleteStaff($conn, $staff_id) {
     return $conn->query("DELETE FROM staff_table WHERE staff_id='$staff_id'");
 }
+////////////////////////////////////
+// Shob notice anar jonno function
+function getAllNotices($conn) {
+    return $conn->query("SELECT * FROM notice_table");
+}
+
+// Notun notice add korar jonno function
+function addNotice($conn, $username, $description) {
+    $sql = "INSERT INTO notice_table (username, description) VALUES ('$username', '$description')";
+    return $conn->query($sql);
+}
+
+// Notice edit ba update korar jonno function
+function updateNotice($conn, $id, $username, $description) {
+    $sql = "UPDATE notice_table SET username='$username', description='$description' WHERE notice_id='$id'";
+    return $conn->query($sql);
+}
+
+// Notice delete korar jonno function
+function deleteNotice($conn, $id) {
+    return $conn->query("DELETE FROM notice_table WHERE notice_id='$id'");
+}
 
 ?>
