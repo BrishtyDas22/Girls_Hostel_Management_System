@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 210, 210);
+}
+#header_design{
+    
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    margin: 0px;
+    color:black;
+    display: flex;
+
+
+
+
+}
+h2{
+    position: absolute;
+    top: 30px;
+    left: 1210px;
+    font-family: 'Times New Roman', Times, serif;
+    margin:0px;
+    font-size:20px;
+    color: #000;
+    
+}
+#header_logo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    left: 30px;
+    
+    
+}
+#header_text{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    
+}
+#user_logo{
+    
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    right: 30px;
+    border-radius: 80px;
+    cursor: pointer;
+
+}
+#sidebar{
+
+
+background-color: #fff;
+position: absolute;
+top: 100px;
+left: 20px;
+width: 250px;
+height: 420px;
+color: rgb(8, 242, 125);
+font-family: 'Times New Roman', Times, serif;
+border-radius: 10px;
+font-size: 14px;
+display: flex;
+text-align: center;
+cursor: pointer;
+
+
+
+}
+#hms{
+    position: absolute;
+    top: -15px;
+    left:55px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(8, 242, 125); ;
+    font-size: 25px;
+
+}
+
+#overview{
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+#complaints{
+     position: absolute;
+     top: 116px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+
+}
+#notices{
+    position: absolute;
+     top: 177px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+
+}
+#notification{
+    position: absolute;
+    top: 238px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+  #booknewroom {
+    position: absolute;
+    top: 299px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+#givefeedback{
+     position: absolute;
+    top: 360px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    box-shadow: #5f5f61e1 0px 4px 8px 0px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+#overview:hover, #complaints:hover, #notices:hover, 
+#notification:hover, #booknewroom:hover, #givefeedback:hover {
+    background-color: rgb(8, 242, 125); 
+    color: white; 
+    box-shadow: #5f5f61e1 0px 6px 12px 0px; 
+    transform: scale(1.02); 
+}
+
+#overviewimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#complaintsimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#noticeimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#notificationimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#booknewroomimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+
+}
+#feedbackimg{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    color: rgb(8, 242, 125);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #94919170;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+#feedback_dashboard {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    width: 1050px;
+    height:auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+#feedback_dashboard label {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px ;
+    font-weight: normal ;
+    color: #555 ;
+    margin-bottom: 8px;
+}
+
+select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+}
+
+.feedback-table th {
+    background-color: #cecece;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #bbb;
+}
+
+.feedback-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+
+.submit-btn {
+    background-color: #08f27d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.submit-btn:hover {
+    background-color: #06c967;
+}
+
+.edit-link {
+    background-color: #0b97f5;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px  solid #ddd;
+}
+
+.delete-link {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.red-circle {
+    position: absolute;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    right: 15px;
+    top: 30px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
