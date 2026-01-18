@@ -26,6 +26,7 @@ $rooms = [];
 
 if ($result && $result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
+        $row['is_full'] = ($row['present_student'] >= $row['capacity']);
         $rooms[] = $row; 
     }
 }
@@ -68,7 +69,12 @@ $conn->close();
 
             
             <p id ="r1_info"><b><i>Fully furnished with cleaning services provided twice a week. Includes high-speed internet and access to the common room.</i></b></p>
+            <?php if ($rooms[0]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
             <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
+            
 
             <?php 
             if ($booked_room_num == $rooms[0]['room_num']): 
@@ -93,7 +99,13 @@ $conn->close();
 
             <input type="hidden" name="room" value="<?php echo $rooms[1]['room_num']; ?>">
             <p id ="r2_info"><b><i>A comfortable, ready-to-occupy room with scheduled cleaning services, reliable high-speed internet, and access to shared common areas.</i></b></p>
-            <button type="submit" id="book_now2">Book Now!</button>
+
+            
+            <?php if ($rooms[1]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
+            <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
 
             <?php 
             if ($booked_room_num == $rooms[1]['room_num']): 
@@ -122,7 +134,12 @@ $conn->close();
 
 
             <p id ="r3_info"><b><i>Well-prepared living space with biweekly cleaning, dependable internet connectivity, and shared common room privileges with air conditioning.</i></b></p>
-            <button type="submit" id="book_now3">Book Now!</button>
+            
+            <?php if ($rooms[2]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
+            <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
 
              
             <?php 
@@ -149,7 +166,12 @@ $conn->close();
 
             <input type="hidden" name="room" value="<?php echo $rooms[3]['room_num']; ?>">
             <p id ="r4_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
-            <button type="submit" id="book_now4">Book Now!</button>
+            
+            <?php if ($rooms[3]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
+            <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
 
              
             <?php 
@@ -176,7 +198,12 @@ $conn->close();
 
             <input type="hidden" name="room" value="<?php echo $rooms[4]['room_num']; ?>">
             <p id ="r5_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
-            <button type="submit" id="book_now5">Book Now!</button>
+           
+            <?php if ($rooms[4]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
+            <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
 
             
             <?php 
@@ -204,7 +231,12 @@ $conn->close();
             <input type="hidden" name="room" value="<?php echo $rooms[5]['room_num']; ?>">
 
             <p id ="r6_info"><b><i>Comfortable living space offered with regular twice-weekly cleaning, fast and reliable internet, and use of shared communal areas.</i></b></p>
-            <button type="submit" id="book_now6">Book Now!</button>
+           
+            <?php if ($rooms[5]['is_full']): ?>
+            <button type="button" onclick="alert('Cannot book this room! The capacity is already full.')" id="book_full">Room Full</button>
+            <?php else: ?>
+            <button type="submit" id="book_now1">Book Now!</button>
+            <?php endif; ?>
 
             
             <?php 
@@ -224,6 +256,6 @@ $conn->close();
 
 
     <br>
-    <a href="../CONTROL/logout.php">Logout</a>
+    
 </body>
 </html>
