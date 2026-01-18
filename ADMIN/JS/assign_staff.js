@@ -3,7 +3,7 @@ function fillStaffForm(id, name, complain, mode) {
     document.getElementById('staff_name').value = name;
     document.getElementById('complain_id').value = complain;
 
-    // Ei line-ti 'Assign Staff' button hide korbe
+   
     document.getElementById('add-btn').style.display = 'none';
     
     if (mode === 'update') {
