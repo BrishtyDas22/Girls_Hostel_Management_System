@@ -29,6 +29,7 @@ include("../CONTROL/validationonlogin.php");
 
         <button type="submit" id="login_button">Login</button>
         <a href="registration1.php" id="register_link">Don't have an account? Register here</a>
+        <a href="forget_password.php" id="forget_password">Forget password?</a>
     </form>
 <?php
     if(!empty($name_error)){
