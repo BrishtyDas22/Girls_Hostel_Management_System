@@ -9,7 +9,9 @@ function fillBooking(btn, mode) {
     var t_num = row.cells[3].innerText;
     var p_method = row.cells[4].innerText;
     var t_id = row.cells[5].innerText;
+    
     var status = row.cells[6].innerText.trim();
+    var amount = row.cells[7].innerText.replace(' TK', '');
 
     // Fill the form input fields
     document.getElementById('booking_id').value = b_id;
@@ -17,6 +19,7 @@ function fillBooking(btn, mode) {
     document.getElementById('room_num').value = r_num;
     document.getElementById('t_num').value = t_num;
     document.getElementById('t_id').value = t_id;
+    document.getElementById('amount').value = amount;
 
     // Handle Payment Method Radio Buttons
     if (p_method === 'Bkash') {
