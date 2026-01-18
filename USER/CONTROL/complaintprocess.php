@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
         $cid = (int)$_POST['complaint_id'];
         $sql = "UPDATE complaint_table SET category='$category', Complaintdescription='$description' WHERE complaint_id = $cid";
-        $msg = "Complaint #$cid updated successfully!";
+        $msg = "Complaint updated successfully!";
     } else {
         
         $userId = $_SESSION["user_id"];
