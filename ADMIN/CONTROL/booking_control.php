@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $p_method = $_POST['p_method']; 
     $t_id = $_POST['t_id']; 
     $status = $_POST['status'];
+    $amount = $_POST['amount'];
     $error = "";
 
     // Validation for Add and Update operations
@@ -31,7 +32,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              elseif (!$room) 
                 { 
                 $error = "Error: Invalid Room!"; 
-            } elseif (isset($_POST['add'])) 
+            } 
+            else {
+                //  Amount khali thakle database theke nibe 
+                if (empty($amount)) {
+                    $sql_p = "SELECT price FROM room_info_table WHERE room_num = '$r_num'";
+                    $res_p = $conn->query($sql_p);
+                    $row_p = $res_p->fetch_assoc();
+                    $amount = $row_p['price'];
+                }
+                if (isset($_POST['add'])) 
             {
                 // Check if user already has an existing booking
                 if (isAlreadyBooked($conn, $user['ID'])) 
@@ -46,11 +56,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
     }
+         }
 
     if ($error == "") {
         // Handling Add Student Logic
         if (isset($_POST['add'])) {
-            if (addBooking($conn, $user['ID'], $room['room_id'], $t_num, $p_method, $t_id, $status)) {
+            if (addBooking($conn, $user['ID'], $room['room_id'], $t_num, $p_method, $t_id, $status, $amount)) 
+                {
                 // Increase room count only if initially added as 'Approved'
                 if ($status == 'Approved') {
                     updateRoomCount($conn, $room['room_id'], 'increase');
@@ -65,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $res = $conn->query($sql);
             $old_data = $res->fetch_assoc();
 
-            if (updateBooking($conn, $b_id, $t_num, $p_method, $t_id, $status)) 
+            if (updateBooking($conn, $b_id, $t_num, $p_method, $t_id, $status, $amount)) 
                 {
                 // Logic: If status changed from Pending to Approved -> Increase count
                 if ($old_data['status'] == 'Pending' && $status == 'Approved') 
