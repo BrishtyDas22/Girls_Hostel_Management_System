@@ -121,8 +121,7 @@ function updateComplaint($conn, $complaint_id, $category, $description) {
     $category = $conn->real_escape_string($category);
     $description = $conn->real_escape_string($description);
     
-    $sql = "UPDATE complaint_table SET category='$category', Complaintdescription='$description' 
-            WHERE complaint_id = $complaint_id";
+    $sql = "UPDATE complaint_table SET category='$category', Complaintdescription='$description' WHERE complaint_id = $complaint_id";
     return $conn->query($sql);
 }
 
