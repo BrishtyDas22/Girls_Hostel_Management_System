@@ -1,0 +1,133 @@
+#student-management-box {
+    position: absolute;
+    top: 90px;
+    left: 285px;
+    width: 1220px;
+    font-family: 'Times New Roman', serif;
+}
+
+.form-section-container {
+    background-color: #f5f5f5;
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.field label {
+    display: inline-block;
+    width: 160px;
+    font-weight: bold;
+}
+
+.field input {
+    width: 280px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-white-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    width: 97%;
+}
+
+#info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+#info-table th, 
+#info-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#info-table thead {
+    background-color: #7a8187;
+    color: white;
+}
+
+#info-table tbody tr {
+    cursor: pointer;
+    background-color: white;
+}
+
+#info-table tbody tr:hover {
+    background-color: transparent;
+}
+
+.action-btn {
+    min-width: 120px;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #d3d3d3;
+}
+
+.add-btn {
+    background-color: #28a745;
+    margin-right: 25px;
+}
+
+.update-btn {
+    background-color: #000055;
+    margin-right: 25px;
+}
+
+.delete-btn {
+    background-color: #ab1010;
+    margin-right: 25px;
+}
+
+#cancel-btn {
+    background-color: #e7a453;
+}
+
+
+.btn-edit, 
+.btn-delete {
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-edit:hover, 
+.btn-delete:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: white;
+}
+
+.error-box {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid red;
+}
