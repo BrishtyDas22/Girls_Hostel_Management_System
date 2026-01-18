@@ -8,9 +8,9 @@
 <body>
     <div id="header_div">
 
-    <img src="../images/machine.png" alt="logo" id="header_logo">
+   
        
-    <h1>Welcome to Happy-Life</h1>
+    
     </div>
     <div id="header_image_div">
     <img src="../images/hostel-g.jpg" alt="header image" id="header_image">
