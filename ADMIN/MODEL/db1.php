@@ -185,16 +185,39 @@ function deleteFeedback($conn, $f_id) {
 
 /////////////////////////////////////////////////////////////
 function getAllComplains($conn) {
-    return mysqli_query($conn, "SELECT * FROM complain_table");
+    return $conn->query( "SELECT * FROM complain_table");
 }
 
 function updateComplain($conn, $id, $status) {
     $sql = "UPDATE complain_table SET status = '$status' WHERE complain_id = '$id'";
-    return mysqli_query($conn, $sql);
+    return $conn->query( $sql);
 }
 
 function deleteComplain($conn, $id) {
     $sql = "DELETE FROM complain_table WHERE complain_id = '$id'";
-    return mysqli_query($conn, $sql);
+    return $conn->query( $sql);
 }
+
+
+
+/////////////////////////////////////
+function getAllStaff($conn) {
+    return $conn->query("SELECT * FROM staff_table");
+}
+
+function addStaff($conn, $staff_name, $complain_id) {
+    $sql = "INSERT INTO staff_table (staff_name, complain_id, work_status) 
+            VALUES ('$staff_name', '$complain_id', '')";
+    return $conn->query($sql);
+}
+
+function updateStaff($conn, $staff_id, $staff_name, $complain_id) {
+    $sql = "UPDATE staff_table SET staff_name='$staff_name', complain_id='$complain_id' WHERE staff_id='$staff_id'";
+    return $conn->query($sql);
+}
+
+function deleteStaff($conn, $staff_id) {
+    return $conn->query("DELETE FROM staff_table WHERE staff_id='$staff_id'");
+}
+
 ?>
