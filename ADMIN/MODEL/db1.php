@@ -136,15 +136,15 @@ function getAllBookings($conn) {
     return $conn->query("SELECT * FROM book_table");
 }
 
-function addBooking($conn, $u_id, $r_id, $t_num, $p_method, $t_id, $status) {
-    $sql = "INSERT INTO book_table (ID, room_id, transaction_number, payment_method, transaction_id, status) 
-            VALUES ('$u_id', '$r_id', '$t_num', '$p_method', '$t_id', '$status')";
+function addBooking($conn, $u_id, $r_id, $t_num, $p_method, $t_id, $status, $amount) {
+    $sql = "INSERT INTO book_table (ID, room_id, transaction_number, payment_method, transaction_id, status, amount) 
+            VALUES ('$u_id', '$r_id', '$t_num', '$p_method', '$t_id', '$status', '$amount')";
     return $conn->query($sql);
 }
 
-function updateBooking($conn, $b_id, $t_num, $p_method, $t_id, $status) {
+function updateBooking($conn, $b_id, $t_num, $p_method, $t_id, $status, $amount) {
     $sql = "UPDATE book_table SET transaction_number='$t_num', payment_method='$p_method', 
-            transaction_id='$t_id', status='$status' WHERE booking_id='$b_id'";
+            transaction_id='$t_id', status='$status', amount='$amount' WHERE booking_id='$b_id'";
     return $conn->query($sql);
 }
 
