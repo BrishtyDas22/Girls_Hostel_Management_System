@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include('../MODEL/db1.php');
 
 $connection = openConn();
