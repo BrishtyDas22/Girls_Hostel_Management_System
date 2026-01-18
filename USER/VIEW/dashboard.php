@@ -40,6 +40,10 @@ $room_images = [
 
 $display_img = $room_images[$room_num] ?? 'default_room.jpg'; 
 
+$count_query = "SELECT COUNT(*) as total FROM notice WHERE status='received'";
+$count_res = $conn->query($count_query);
+$count_data = $count_res->fetch_assoc();
+
 $conn->close();
 ?>
 <!DOCTYPE html>
@@ -68,7 +72,13 @@ $conn->close();
     <a href="dashboard.php" id="overview"><img src="../images/webpage-list.gif" alt="overviewimg" id="overviewimg">Overview</a>
     <a href="complaint.php" id="complaints"><img src="../images/bad-review.gif" alt="complaints" id="complaintsimg">Complaints</a>
     <a href="notices.php" id="notices"><img src="../images/notice.gif" alt="notice" id="noticeimg">Notices</a>
-    <a href="notification.php" id="notification"><img src="../images/new-message.gif" alt="notification" id="notificationimg">Notifications</a>
+    <a href="notification.php" id="notification">
+        <img src="../images/new-message.gif" alt="notification" id="notificationimg">
+        Notifications
+        <?php if($count_data['total'] > 0): ?>
+            <span class="red-circle"><?= $count_data['total'] ?></span>
+        <?php endif; ?>
+    </a>
     <a href="afterlogin.php" id="booknewroom"><img src="../images/add.gif" alt="newroom"id="booknewroomimg">New Room</a>
      <a href="feedback.php" id="givefeedback"><img src="../images/feedback.gif" alt="feedback" id="feedbackimg">Feedback</a>
 
