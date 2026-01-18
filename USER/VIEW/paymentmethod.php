@@ -1,11 +1,40 @@
 <?php
-session_start();
-if(!isset($_SESSION["user_id"])){
-    header("Location: ../VIEW/Login.php");
+
+session_start(); 
+include("../MODEL/db.php"); 
+
+
+if (!isset($_SESSION["username"])) {
+    header("Location: Login.php");
     exit();
 }
-
+$conn = openConn(); 
 $selected_room = isset($_GET['room']) ? $_GET['room'] : "";
+
+
+if (!empty($selected_room)) {
+    $room_num = mysqli_real_escape_string($conn, $selected_room);
+    
+    
+    $check_query = "SELECT capacity, present_student FROM room_info_table WHERE room_num = '$room_num'";
+    $check_res = $conn->query($check_query);
+    
+    if ($check_res && $check_res->num_rows > 0) {
+        $room_data = $check_res->fetch_assoc();
+        
+       
+        if ($room_data['present_student'] >= $room_data['capacity']) {
+            echo "<script>
+                    alert('This room (No: $room_num) is already full. Please select another room.');
+                    window.location.href='afterlogin.php';
+                  </script>";
+            exit();
+        }
+    }
+}
+$conn->close();
+
+
 ?>
 <!DOCTYPE html>
 <head>
