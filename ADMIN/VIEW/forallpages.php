@@ -120,6 +120,7 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 </div> -->
      <script src="../JS/gotologout.js"></script>
       <script src="../JS/notification.js"></script>
+      <script src="../JS/sidebar.js"></script>
  
 </body>
 </html>
