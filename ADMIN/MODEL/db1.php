@@ -241,5 +241,19 @@ function updateNotice($conn, $id, $username, $description) {
 function deleteNotice($conn, $id) {
     return $conn->query("DELETE FROM notice_table WHERE notice_id='$id'");
 }
+/////////////////////////////////
+// Notification related functions
+
+function getUnreadNotis($conn) {
+    // Shudhu 0 na, read-unread shob anbo jate list empty na hoye jay
+    $sql = "SELECT notifications, is_read FROM notification_table ORDER BY noti_id DESC LIMIT 10";
+    return $conn->query($sql);
+}
+
+function updateNotiStatus($conn) {
+    // Click korle shob gulo read (1) hoye jabe
+    $sql = "UPDATE notification_table SET is_read = 1 WHERE is_read = 0";
+    return $conn->query($sql);
+}
 
 ?>
