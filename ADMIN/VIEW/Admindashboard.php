@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include('../CONTROL/dashboard_logic.php');
 if (!isset($_SESSION["username"])) {
     header("Location: adminLogin.php");
     exit();
@@ -72,7 +72,7 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 
 <div id="insidecontent">
     <form method="post" id="roomcounts">
-        <Label id="roomnum"></Label>
+        <Label id="roomnum"><?php echo $totalRoomsCount; ?></Label>
         <br>
         <label id="infoofroom">Total Rooms</label>
         <img src="../IMAGES/bed.png" alt="bedlogo" id="bedlogo">
@@ -81,25 +81,28 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 
 
         <form method="post" id="studentcounts">
-        <!-- Students number ekhane bosbe through table from database -->
+       
 
-
+<Label id="studentnum"><?php echo $totalStudentsCount; ?></Label> 
+    <br>
         <label id="infoofstudents">Total Students</label>
         <img src="../IMAGES/teamwork.png" alt="userslogo" id="userslogo">
 
     </form>
 
     <form method="post" id="pendingcomplaints">
-        <!-- Pending complaints number ekhane bosbe through table from database -->
 
+<Label id="pendingcomplaintnum"><?php echo $pendingComplaintsCount; ?></Label>
+    <br>
         <label id="infoofcomplaints">Pending Complaints</label>
         <img src="../IMAGES/project-deadline.png" alt="complaintlogo" id="complaintlogo">
     </form>
 
     
     <form method="post" id="revenue">
-        <!-- Pending complaints number ekhane bosbe through table from database -->
-
+     
+<Label id="revenuenum"><?php echo $totalRevenueSum; ?> TK</Label>
+    <br>
         <label id="infoofrevenue">Revenue</label>
         <img src="../IMAGES/money.png" alt="revenuelogo" id="revenuelogo">
     </form>
@@ -109,11 +112,43 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 
 </div>
 <div id="recentbookingtable">
-    <form action="" method="post">
+   
         <h2 id="recentbookingsheading">Recent Bookings</h2>
         
 
-    </form>
+    <table class="dashboard-table">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>User ID</th>
+                <th>Room ID</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php 
+           
+            if ($bookingTableData && $bookingTableData->num_rows > 0) {
+                while($row = $bookingTableData->fetch_assoc()) { 
+            ?>
+            <tr>
+                <td><?php echo $row['booking_id']; ?></td>
+                <td><?php echo $row['ID']; ?></td>
+                <td><?php echo $row['room_id']; ?></td>
+                <td><?php echo $row['amount']; ?> TK</td>
+                <td class="status-column <?php echo strtolower($row['status']); ?>">
+                    <?php echo $row['status']; ?>
+                </td>
+            </tr>
+            <?php 
+                } 
+            } else {
+                echo "<tr><td colspan='5' class='no-data'>No records found.</td></tr>";
+            }
+            ?>
+        </tbody>
+    </table>
 
 
 
