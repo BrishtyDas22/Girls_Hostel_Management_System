@@ -67,7 +67,7 @@ if (isset($_SESSION['error']))
             <tbody>
                 <?php
                 $result = getAllComplains($conn);
-                while($row = mysqli_fetch_assoc($result)) {
+                while($row = $result->fetch_assoc()) {
                     $jsData = "'".$row['complain_id']."', '".$row['username']."', '".$row['complain_description']."', '".$row['status']."'";
                     $status_class = ($row['status'] == 'Pending') ? 'status-pending' : 'status-resolved';
 
