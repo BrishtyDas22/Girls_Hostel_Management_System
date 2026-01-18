@@ -124,7 +124,18 @@ function updateComplaint($conn, $complaint_id, $category, $description) {
     $sql = "UPDATE complaint_table SET category='$category', Complaintdescription='$description' WHERE complaint_id = $complaint_id";
     return $conn->query($sql);
 }
-
+function refreshNotificationJson($conn) {
+    $sql = "SELECT * FROM notice ORDER BY notification_id DESC";
+    $result = $conn->query($sql);
+    $data = ["unread" => 0, "notices" => []];
+    
+    while($row = $result->fetch_assoc()) {
+        $data['notices'][] = $row;
+        if($row['status'] == 'received') { $data['unread']++; }
+    }
+   
+    file_put_contents(__DIR__ . '/../JS/JSON/get_notification.json', json_encode($data));
+}
 
 
 
