@@ -55,7 +55,10 @@ if (!empty($error))
                 <input type="radio" name="status" id="pending" value="Pending"> Pending
                 <input type="radio" name="status" id="approved" value="Approved"> Approved
             </div>
-            
+            <div class="form-row">
+    <label>Amount :</label>
+    <input type="text" name="amount" id="amount" placeholder="use it only for give discount">
+</div>
             <div class="btn-group">
                 <button type="submit" name="add" id="add-btn" class="btn-green">Add Student</button>
                 <button type="button" class="btn-orange" onclick="window.location.reload()">Cancel</button>
@@ -76,6 +79,7 @@ if (!empty($error))
                     <th>Trans No</th>
                     <th>Payment</th>
                     <th>Trans ID</th>
+                    <th>Amount</th>
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>
@@ -96,7 +100,9 @@ if (!empty($error))
                     <td><?php echo $row['payment_method']; ?></td>
                     <td><?php echo $row['transaction_id']; ?></td>
                     <td class="<?php echo ($row['status'] == 'Pending') ? 'status-pending' : 'status-approved'; ?>">
+                       
                         <?php echo $row['status']; ?>
+                         <td><?php echo $row['amount']; ?> TK</td>
                     </td>
                     <td>
                         <button class="btn-edit" onclick="fillBooking(this, 'update')">Edit</button>
