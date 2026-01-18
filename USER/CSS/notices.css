@@ -372,20 +372,20 @@ cursor: pointer;
 
 }
 .red-circle {
-    position: absolute;
+   position: absolute;
     background-color: #ff0000;
     color: white;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;    
+    align-items: center;         
+    justify-content: center;     
+    line-height: 1;              
     font-size: 12px;
     font-weight: bold;
     right: 15px;
-    top: 30px;
-    transform: translateY(-50%);
+    top: 20px;                    
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     z-index: 10;
 }
