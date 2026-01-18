@@ -54,6 +54,16 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
     <div class="content">
         <h2><?php echo $_SESSION['username']; ?>, Welcome to Happy Life!</h2>
           <div id="profilebox">
+                
+          <div id="noti-wrapper" onclick="showNoti()">
+        <img src="../IMAGES/noti icon.png" id="noti-icon" alt="notification">
+        <div id="noti-badge">0</div>
+        
+        <div id="noti-popup" class="hidden">
+            <div class="noti-header">New Notifications</div>
+            <div id="noti-list">No new notifications.</div>
+        </div>
+    </div> 
         <img src="<?php echo $img; ?>" id="profileicon" alt="profile" onclick="location.href='../VIEW/adminprofile.php'">
     </div>
 
@@ -109,6 +119,7 @@ $img = !empty($_SESSION["profile_pic"]) ? "../IMAGES/uploads/".$_SESSION["profil
 
 </div> -->
      <script src="../JS/gotologout.js"></script>
+      <script src="../JS/notification.js"></script>
  
 </body>
 </html>
