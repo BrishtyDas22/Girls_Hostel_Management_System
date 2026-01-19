@@ -18,17 +18,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $isValid=true;
 
     if(empty($name)){
-        $name_error="Name is required";
+        $name_error="Name is required 🙂";
         $isValid=false;
     }
 
     if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $email_error="Email is required and must be a valid email address";
+        $email_error="Email is required and must be a valid email address 🙂";
         $isValid=false;
     }
 
     if(empty($password) || strlen($password)<6){
-        $password_error="Password is required and must be at least 6 characters long";
+        $password_error="Password is required and must be at least 6 characters long 😪";
         $isValid=false;
     }
 
@@ -63,12 +63,12 @@ if ($result->num_rows > 0) {
            exit();
 
     } else {
-        $password_error="Invalid password.";
+        $password_error="Invalid password 😞.";
     }
 
 }
 else {
-    $success_msg="No user found with the provided name and email.";
+    $success_msg="No user found with the provided name and email.😵‍💫";
 }
 
 $conn->close();
