@@ -58,6 +58,7 @@ $conn->close();
 
 
     <div id="room_info">
+        
         <form method="get" action="paymentmethod.php" id="booking-form">
             <img src="../images/2bed.jpg" alt="room1.png" id="room1_img">
             <h3>Room Info:</h3>
