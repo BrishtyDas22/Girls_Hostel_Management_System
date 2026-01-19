@@ -29,7 +29,12 @@ if (!file_exists($folder)) {
 
     $isUpdated = false;
 
-    if (!empty($new_pass)) {
+    if (!empty($new_pass))
+        {
+        if (strlen($new_pass) < 6) { 
+            echo '<script>alert("Password must be at least 6 characters long!"); window.history.back();</script>';
+            exit();
+        } 
         if ($new_pass === $confirm_pass) {
             $isUpdated = updateAdminProfile($conn, $name, $phone, $blood, $file_name, $email, $new_pass, $confirm_pass);
         } else {
@@ -46,7 +51,18 @@ if (!file_exists($folder)) {
         $_SESSION["username"] = $name;
         $_SESSION["phonenumber"] = $phone;
         $_SESSION["blood"] = $blood;
+        //  cookie update korar jonno
+        // Jodi age theke "Remember Me" cookie thake, tobe seta update kora
+        if (isset($_COOKIE['remember_name'])) {
+            setcookie("remember_name", $name, time() + (86400 * 30), "/", "", false, true);
+        }
         
+        // Email jodi change korar option thakto , tobe email o update kora lagto
+        if (isset($_COOKIE['remember_email'])) {
+            // Ekhane $_SESSION["email"] use korchi karon email readonly thakleo seta session e ache
+            setcookie("remember_email", $_SESSION["email"], time() + (86400 * 30), "/", "", false, true);
+        }
+        // ------------------------
       $_SESSION['update_msg'] = "Profile Updated Successfully!";
         session_write_close(); 
         
