@@ -23,19 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if(empty($_POST["name"])){
-        $name_error="Name is required";
+        $name_error="Name is required 🙂";
        
        
     }
     else{
         $name= trim($_POST["name"]);
         if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
-            $name_error = "Only letters and spaces allowed in here!!";
+            $name_error = "Only letters and spaces allowed in here!! 🙂";
         }
 
     }
     if(empty($_POST["email"])){
-        $email_error="Email is required";
+        $email_error="Email is required 😔";
         
        
     }
@@ -43,40 +43,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email= trim($_POST["email"]);
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $email_error = "Invalid email format";
+            $email_error = "Invalid email format 😔";
         }
 
     }
      if (empty($email_error)) {
         $conn = openConn();
         if (isEmailExists($conn, $email)) {
-            $email_error = "Email already exists! Please try another one.";
+            $email_error = "Email already exists! Please try another one.🙂";
         }
         $conn->close();
     }
 
 
     if(empty($_POST["phonenumber"])){
-        $phonenumber_error="Phone number is required";
+        $phonenumber_error="Phone number is required 🙌";
         
        
     }
     else{
         $phonenumber= trim($_POST["phonenumber"]);
         if(!preg_match("/^[0-9]{11}$/", $_POST["phonenumber"])){
-            $phonenumber_error="Invalid phone number format";
+            $phonenumber_error="Invalid phone number format 😒";
 
         }
 
     }
     if(empty($_POST["password"])){
-        $password_error="Password is required";
+        $password_error="Password is required 🤨";
         
        
     }
     else{
         if(strlen($_POST["password"]) < 6){
-            $password_error="Password must be at least 6 characters long";
+            $password_error="Password must be at least 6 characters long 😞";
            
        
         }
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
     if(empty($_POST["c_password"])){
-        $c_password_error="Confirm your password";
+        $c_password_error="Confirm your password 😃";
      
        
     }
@@ -93,12 +93,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
     if($password !== $c_password){
-        $password_error="Passwords do not match";
-        $c_password_error="Passwords do not match";
+        $password_error="Passwords do not match 😞";
+        $c_password_error="Passwords do not match 😞";
        
     }
     if(empty($_POST["blood"]) || $_POST["blood"] == "Select group"){
-        $blood_error="Please select your blood group";
+        $blood_error="Please select your blood group 🙂";
         
            }
     else{
