@@ -60,8 +60,14 @@ input[readonly] {
     transition: 0.3s;
     border: 2px solid #d3d3d3;
     margin-right: 15px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
-
+.action-btn:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+   
+    z-index: 5;
+}
 .update-btn {
      background-color: #000055;
      }
@@ -69,7 +75,7 @@ input[readonly] {
      background-color: #ab1010;
      }
 #cancel-btn { 
-    background-color: #e7a453;
+    background-color: #f59b2d;
 }
 
 /* Table */
