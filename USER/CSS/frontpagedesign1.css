@@ -530,7 +530,7 @@ h2{
 
 
 #room_box, #room_box1, #room_box2, #room_box3, #room_box4, #room_box5 {
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
 }
 
 
@@ -545,7 +545,7 @@ h2{
 }
 
 #register:hover, #login:hover, #Alogin:hover {
-    transform: scale(1.03); 
+    transform: scale(1.23); 
 }
 
 #register:active, #login:active, #Alogin:active {
