@@ -38,7 +38,7 @@ if(!isset($_SESSION["user_id"])){
     
     <button type="button" id="pbutton" onclick="document.getElementById('actual-file-input').click()"> Choose Image</button>
 
-    <button type="submit" id="submit-btn2" name="submit">Update Profile </button>
+    <button type="submit" id="submit-btn2" name="submit">Update Profile</button>
     
     <span id="filet">No file chosen</span>
     </div>
