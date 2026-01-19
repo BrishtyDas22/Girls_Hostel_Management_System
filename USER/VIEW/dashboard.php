@@ -94,12 +94,12 @@ $conn->close();
         </div>
 
         <div class="room-data">
-            <h3>Booked Room Details</h3>
+            <h3>Booked Room Details:</h3>
             <p><b>Room Number:</b> <?php echo $room_num; ?></p>
             <p><b>Status:</b> <span id="approved">Confirmed & Approved</span></p>
             <p><b>Price:</b> <?php echo $room_details['price'] ?? '10000'; ?></p>
             <hr>
-            <h3>Payment Information</h3>
+            <h3>Payment Information:</h3>
             <p><b>Method:</b> <?php echo $booking['payment_method']; ?></p>
             <p><b>Transaction ID:</b> <?php echo $booking['transition_id']; ?></p>
         </div>
