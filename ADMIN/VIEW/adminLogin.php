@@ -11,7 +11,7 @@ include("../CONTROL/validationonloginadmin.php");
     <div class="bg-div">
     <img src="../IMAGES/bg.avif" class="bg-img" alt="">
 </div>
-    <img src="../IMAGES/3d-house.png" alt="Home Logo" width="60px" height="60px" id="home_logo" onclick="gotofrontpage()">
+    <img src="../IMAGES/3d-house.png" alt="Home Logo"  id="home_logo" onclick="gotofrontpage()">
 
 <div class="login-box">
      <div class="left-div">
@@ -21,7 +21,7 @@ include("../CONTROL/validationonloginadmin.php");
     <div class="right-div">
 
     <form method="post" id="login_form" action="">
-        <img src="../IMAGES/login.png" alt="login logo" width="80px" height="80px" id="login_image">
+        <img src="../IMAGES/login.png" alt="login logo"  id="login_image">
         <br>
 
         <label>Username:</label>
@@ -34,7 +34,9 @@ include("../CONTROL/validationonloginadmin.php");
         <label>Password:</label>
         <input type="password" name="password" id="password" value="<?php echo $password ?>">
     
-
+<label class="remember-label">
+    <input type="checkbox" name="remember" id="remember"> Remember Me
+</label>
         <button type="submit" id="login_button">Login</button>
         
     </form>
