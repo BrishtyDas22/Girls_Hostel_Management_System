@@ -33,7 +33,7 @@ if (isset($_POST['reset_btn'])) {
             $update_sql = "UPDATE user_registration SET password = '$hashed_password', c_password = '$hashed_password' WHERE name = '$username'";
             
             if ($conn->query($update_sql)) {
-                $success_msg = "Password updated successfully! You can now login.";
+                $success_msg = "Password updated successfully! Login now😊";
             } else {
                 $error_msg = "Database Error: " . $conn->error;
             }
