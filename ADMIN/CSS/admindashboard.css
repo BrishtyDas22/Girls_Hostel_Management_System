@@ -148,8 +148,8 @@ body {
 #profileicon {
     display: inline-block; 
     vertical-align: middle;
-    width: 55px;
-    height: 55px;
+    width: 43px;
+    height: 43px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -361,7 +361,19 @@ body {
     border: 1px solid #c6c6c6; 
 }
 
-/* Row-te mouse nile jate highlight hoy */
+
 .dashboard-table tr:hover {
     background-color: #f2f2f2;
+}
+
+
+#profileicon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+
+#profileicon:hover {
+    transform: scale(1.2); 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 100;
 }
